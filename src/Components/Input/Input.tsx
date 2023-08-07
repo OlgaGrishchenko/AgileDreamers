@@ -2,7 +2,7 @@ import React, { FC, ChangeEvent, ReactElement } from "react";
 
 import styles from "./Input.module.css";
 import classnames from "classnames";
-import { ErrorIcon } from "../../Assets/Footer/ErrorIcon";
+import { Logo } from "../../Assets/Footer/Logo";
 
 export enum InputTypes {
   SearchType = "searchType",
@@ -41,7 +41,7 @@ const Input: FC<InputProps> = ((props) => {
             [styles.error]: error
           })}
         />
-        {error && <div className={styles.textError}><ErrorIcon /> error</div>}
+        {error && <div className={styles.textError}><Logo /> error</div>}
       </div>
     </>
   );

@@ -98,6 +98,6 @@ top: 0;
 
 .line {
   position: absolute;
-right: -155px;
-bottom: 20px;
+right: 0px;
+bottom: 100px;
 }

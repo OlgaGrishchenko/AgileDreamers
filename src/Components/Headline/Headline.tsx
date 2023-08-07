@@ -11,6 +11,9 @@ import styles from "./Headline.module.css";
 const Headline = () => {
   return (
     <div className={styles.wrap}>
+      <div className={styles.line}>
+            <Line />
+          </div>
       <div className={styles.container}>
         <div className={styles.ukraine}>
           <Ukraine />
@@ -57,9 +60,7 @@ const Headline = () => {
             onClick={() => {}}
           />
           </div>
-          <div className={styles.line}>
-            <Line />
-          </div>
+          
         </div>
       </div>
     </div>
