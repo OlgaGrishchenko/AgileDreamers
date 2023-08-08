@@ -6,6 +6,9 @@
   margin: 0 auto;
   max-width: 1216px;
   text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
 }
 
 .title {
@@ -15,13 +18,26 @@
   font-weight: 600;
   line-height: 40px;
   letter-spacing: 0.78px;
-  color: #1D1E2C;
+  color: #1d1e2c;
   text-align: start;
   padding-bottom: 8px;
   width: max-content;
-  border-bottom: 4px solid #5B7CFE;
+  border-bottom: 4px solid #5b7cfe;
 }
 
-.dark {
-  background-color: #1D1E2C;
+.tabslist {
+  display: flex;
+  gap: 32px;
+}
+
+.icons {
+  width: 904px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  column-gap: 40px;
+  justify-content: center;
+  align-items: center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }

@@ -13,3 +13,11 @@ export type CompanyCardType = {
 };
 
 export type CompanyCardListType = Array<CompanyCardType>;
+
+export enum TabsTools {
+  Frontend = 'frontend',
+  Backend = 'backend',
+  Mobile = 'mobile',
+  Design = 'design',
+  Blockchain = 'blockchain'
+}
