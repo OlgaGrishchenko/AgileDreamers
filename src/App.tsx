@@ -11,6 +11,7 @@ function App() {
         <title>AGILE DREAMERS</title>
         <link rel="canonical" href="https://agiledreamers.com/" />
         <meta name="description" content="B2B matching platform" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
       </Helmet>
       <Router />
     </div>

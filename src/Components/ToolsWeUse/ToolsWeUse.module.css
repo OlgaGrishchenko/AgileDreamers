@@ -40,4 +40,5 @@
   align-items: center;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  align-content: center;
 }

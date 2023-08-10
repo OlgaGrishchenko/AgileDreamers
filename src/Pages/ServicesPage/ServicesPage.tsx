@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import React from "react";
-import { ArrowWhite } from "../../Assets/CompanyPage/ArrowWhite";
 import { ArrowDown } from "../../Assets/ServicesPage/ArrowDown";
 import { Eight } from "../../Assets/ServicesPage/Eight";
 import { Five } from "../../Assets/ServicesPage/Five";
@@ -96,7 +95,7 @@ const ServicesPage = () => {
           <div className={styles.title}>Strong Expertise in</div>
           <div className={styles.areas}>
             <span className={styles.areaBlue}>
-              Areas <ArrowWhite />
+              Areas <ArrowDown/>
             </span>
             {StrongExpertise.map(({ name }) => {
               return <span className={styles.area}> {name} </span>;

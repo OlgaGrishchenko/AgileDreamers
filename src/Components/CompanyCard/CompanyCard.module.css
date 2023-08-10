@@ -19,7 +19,7 @@
   width: 56px;
   height: 56px;
   -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .info {
@@ -88,4 +88,23 @@
   width: 84px;
   height: 16px;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 320px;
+  }
+
+  .first {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+
+  .containerAnswers {
+    gap: 8px;
+  }
+
+  .text {
+    height: 116px;
+  }
 }
