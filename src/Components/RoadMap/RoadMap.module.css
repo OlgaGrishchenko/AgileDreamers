@@ -1,6 +1,9 @@
 .container {
   margin: 0 auto;
   width: 1216px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
 }
 .verticalTimeline {
   width: 100% !important;
@@ -47,6 +50,19 @@
 
 .vertical-timeline-element-content {
   border-radius: 0 !important;
+}
+
+.containerTitle {
+  color: #1D1E2C;
+font-family: Kanit;
+font-size: 39px;
+font-style: normal;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: 0.78px;
+padding-bottom: 8px;
+border-bottom: 4px solid #5B7CFE;
+width: max-content;
 }
 
 

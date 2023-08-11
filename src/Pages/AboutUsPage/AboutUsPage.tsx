@@ -1,4 +1,5 @@
 import React from "react";
+import { AboutUsLogo } from "../../Assets/AboutUs/AboutUsLogo";
 
 import { Line } from "../../Assets/Headline/Line";
 import Benefits from "../../Components/Benefits";
@@ -31,31 +32,29 @@ const AboutUsPage = () => {
                 developers for service providers and product companies.
               </div>
             </div>
-            <div className={styles.containerButtons}>
+
               <div className={styles.buttons}>
                 <Button
-                  className={styles.buttonSignIn}
+                  className={styles.buttonSmall}
                   title={"Service Providers"}
                   type={ButtonTypes.BigPrimary}
                   onClick={() => {}}
                 />
                 <Button
-                  className={styles.buttonSignUp}
+                  className={styles.buttonSmall}
                   title={"Become a Provider"}
                   type={ButtonTypes.BigSecondary}
                   onClick={() => {}}
                 />
                 <Button
-                  className={styles.buttonSignUp}
+                  className={styles.buttonBig}
                   title={"Become a Freelance Developer"}
                   type={ButtonTypes.BigSecondary}
                   onClick={() => {}}
                 />
               </div>
-              <div>
-                <Line />
-              </div>
-            </div>
+
+            <div className={styles.logo}><AboutUsLogo /></div>
           </div>
         </div>
       </div>

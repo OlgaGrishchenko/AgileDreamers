@@ -72,13 +72,13 @@
   opacity: 0.8;
   text-align: start;
   max-width: 598px;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .image {
-position: absolute;
-right: 0;
-top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .buttons {
@@ -98,6 +98,6 @@ top: 0;
 
 .line {
   position: absolute;
-right: 0px;
-bottom: 100px;
+  right: 0px;
+  bottom: 100px;
 }

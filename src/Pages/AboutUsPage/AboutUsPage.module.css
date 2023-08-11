@@ -1,7 +1,7 @@
 .wrap {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 64px;
 }
 
 .darkBlock {
@@ -9,87 +9,76 @@
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding-bottom: 120px;
-  padding-top: 48px;
+  padding-bottom: 72px;
+  padding-top: 72px;
+  position: relative;
+  overflow: hidden;
 }
 
 .whiteBlock {
   display: flex;
   flex-direction: column;
-  gap: 160px;
+  gap: 64px;
   text-align: start;
-  margin-bottom: 160px;
+  margin-bottom: 64px;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1300px;
+  width: 1216px;
+  text-align: start;
+}
+
+.logo {
+  position: absolute;
+  right: -100px;
+  bottom: 68px;
+  transform: rotate(0.376deg);
+  mix-blend-mode: overlay;
+  filter: blur(2.5px);
+ 
 }
 
 .title {
   color: #fcfcfc;
   font-family: Kanit;
-  font-size: 64px;
+  font-size: 61px;
   font-style: normal;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 64px;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
-
-/*.subtitle {
-  font-family: Kanit;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 96px;
-  text-align: start;
-  width: fit-content;
-  padding-bottom: 8px;
-}
-
-.darkSubtitle {
-  color: #1d1e2c;
-}
-
-.lightSubtitle {
-  color: #fcfcfc;
-}
-
-.borderSubtitle {
-  border-bottom: 4px solid #5b7cfe;
-}
-
-.headLine {
-  max-width: 1300px;
-  margin: 0 auto;
-  text-align: start;
-  padding: 48px 0 120px;
-}*/
 
 .headLineDescription {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-bottom: 56px;
+  gap: 16px;
+  margin-bottom: 40px;
 }
 
 .headLineText {
-  color: #fcfcfc;
   font-family: Karla;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
-}
-
-.containerButtons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #fcfcfc;
+  max-width: 800px;
 }
 
 .buttons {
+  max-width: 488px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
+}
+
+.buttonBig {
+  width: 100%;
+}
+
+.buttonSmall {
+  width: 159px;
 }
