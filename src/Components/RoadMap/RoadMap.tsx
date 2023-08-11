@@ -1,94 +1,82 @@
-import React, { useRef, useState } from "react";
-import { useScroll } from "framer-motion";
-/*import {
-  ActiveRoadStroke,
-  RoadContent,
-  RoadStroke,
-  RoadStrokeDot,
-  RoadWrapper,
-} from "./styled";*/
+import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { Dot } from "../../Assets/AboutUs/Dot";
 
 import styles from "./RoadMap.module.css";
 
 const RoadMap = () => {
-  const ref = useRef(null);
-  const [scroll, setScroll] = useState(0);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["end end", "start start"],
-  });
-
-  scrollYProgress.on("change", (val) => setScroll(val));
-
-  const isFirstActive = scroll > 0.1;
-  const isSecondActive = scroll > 0.35;
-  const isFhirdActive = scroll > 0.65;
-  const isFourActive = scroll > 0.9;
-
   return (
-    <div></div>
-    
-    /*<RoadWrapper id="road">
-      <h2>roadmap</h2>
-      <RoadContent>
-        <div id={!isFirstActive ? "notActive" : ""}>
-          <h3>Q3 2023</h3>
-          <p>
-            Product Concepualization <br />
-            Data Science/ML Research <br />
-            Core Team Formation
-          </p>
-          <RoadStrokeDot active={isFirstActive} />
-        </div>
-        <div id={!isSecondActive ? "notActive" : ""}>
-          <h3>Q1-Q2 2023</h3>
-          <div>
-            <p style={{ fontWeight: "bold" }}>
-              Complete Microservice Architeture
-            </p>
-            <article>Disruption Testnet v1</article>
-            <span className="active">
-              Tournament System, Front End, Back End <br />
-              Prize Pools Payout Executation, ML End Points/ <br />
-              Preliminary Models
-            </span>
+    <div className={styles.container}>
+      <VerticalTimeline lineColor={"#5B7CFE"} className={styles.verticalTimeline}>
+
+        <VerticalTimelineElement
+          className={styles.verticalTimelineElementWork}
+          iconStyle={{ background: "#5B7CFE", top: "64px" }}
+        >
+          <div className={styles.point}>
+          <h3 className={styles.title}>Q3 2023</h3>
+          <div className={styles.data}>
+            <li className={styles.description}>Official Platform launch</li>
+            <li className={styles.description}>Accelerator/Incubator partnership program</li>
           </div>
-          <RoadStrokeDot active={isSecondActive} />
-        </div>
-        <div id={!isFhirdActive ? "notActive" : ""}>
-          <h3>Q2 2023</h3>
-          <div>
-            <p style={{ fontWeight: "bold" }}>
-              ML Models (devs integration) <br />
-              3rd Party Game Integrations <br />
-              Disruption Testnet V2
-            </p>
-            <span>
-              Additional Game Integration, <br />
-              AI Tools for Game Developers, NFT Marketplace
-            </span>
           </div>
-          <RoadStrokeDot active={isFhirdActive} />
-        </div>
-        <div id={!isFourActive ? "notActive" : ""}>
-          <h3>Q2-Q3 2023</h3>
-          <div>
-            <p style={{ fontWeight: "bold" }}>
-              $DX Token TGE (Q3) <br />
-              DX SDK Launch <br />
-            </p>
-            <span>Large Dataset Building</span>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className={styles.verticalTimelineElementWork}
+          iconStyle={{ background: "#5B7CFE" }}
+        >
+          <div className={styles.point}>
+          <h3 className={styles.title}>Q4 2023</h3>
+          <div className={styles.data}>
+            <li className={styles.description}>Freelance and Outstaffing functionality will be added</li>
+            <li className={styles.description}>First eLearning coding courses will take place at Agile Dreamers Platform</li>
           </div>
-          <RoadStrokeDot active={isFourActive} />
-        </div>
-      </RoadContent>
-      <RoadStroke ref={ref}>
-        <ActiveRoadStroke
-          // height={'37%'}
-          style={{ transform: `scaleY(${scroll})` }}
-        />
-      </RoadStroke>
-    </RoadWrapper>*/
+          </div>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className={styles.verticalTimelineElementWork}
+          iconStyle={{ background: "#5B7CFE" }}
+        >
+          <div className={styles.point}>
+          <h3 className={styles.title}>Q1 2024</h3>
+          <div className={styles.data}>
+            <li className={styles.description}>Fiat and crypto payments are supported to fulfil transfers between clients, providers and partners</li>
+            <li className={styles.description}>Agile Dreamers - Hackathon programs will be launched</li>
+          </div>
+          </div>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className={styles.verticalTimelineElementWork}
+          iconStyle={{ background: "#5B7CFE" }}
+        >
+          <div className={styles.point}>
+          <h3 className={styles.title}>November 2024</h3>
+          <div className={styles.data}>
+            <li className={styles.description}>AI freelancer search will be implemented to clients providers needs</li>
+            <li className={styles.description}>Adaptive certification internship program for global clients and partners</li>
+          </div>
+          </div>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className={styles.verticalTimelineElementWork}
+          iconStyle={{ background: "#5B7CFE" }}
+        >
+          <div className={styles.point}>
+          <h3 className={styles.title}>June 2024</h3>
+          <div className={styles.data}>
+            <li className={styles.description}>Private cryptocurrency is published and supported as a utility token for the Agile Dreamers Platform</li>
+            <li className={styles.description}>Learn-to-earn program</li>
+          </div>
+          </div>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
+    </div>
   );
 };
 

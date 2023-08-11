@@ -3,6 +3,7 @@ import React from "react";
 import { Line } from "../../Assets/Headline/Line";
 import Benefits from "../../Components/Benefits";
 import Button, { ButtonTypes } from "../../Components/Button";
+import RoadMap from "../../Components/RoadMap";
 
 import styles from "./AboutUsPage.module.css";
 
@@ -60,7 +61,7 @@ const AboutUsPage = () => {
       </div>
 
       <div className={styles.whiteBlock}>
-        <div></div>
+        <RoadMap />
         <Benefits />
       </div>
     </div>
