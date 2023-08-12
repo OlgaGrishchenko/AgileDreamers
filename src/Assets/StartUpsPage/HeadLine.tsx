@@ -12,7 +12,7 @@ export const HeadLine = () => {
         height="1"
         transform="matrix(1 0 0 -1 0 4.5)"
         fill="#FCFCFC"
-        fill-opacity="0.64"
+        fillOpacity="0.64"
       />
       <circle cx="3.5" cy="4" r="3.5" fill="#FCFCFC" />
     </svg>

@@ -10,9 +10,9 @@ export const ArrowReturn = () => {
       <path
         d="M14.4006 16.7998L9.60059 11.9998L14.4006 7.19981"
         stroke="#ADBEFF"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

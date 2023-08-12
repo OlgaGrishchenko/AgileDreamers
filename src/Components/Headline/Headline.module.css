@@ -83,9 +83,13 @@
 
 .buttons {
   display: flex;
+  flex-direction: column;
   gap: 16px;
-  flex-wrap: wrap;
   max-width: 488px;
+}
+.topButtonContainer {
+  display: flex;
+  gap:16px;
 }
 
 .buttonBig {
