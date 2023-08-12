@@ -17,9 +17,10 @@ const RoadMap = () => {
         <VerticalTimelineElement
           className={styles.verticalTimelineElementWork}
           iconClassName={styles.eclipse}
-        //  iconStyle={{ top: "64px"}}
           icon={<Eclipse/>}
           contentStyle={{boxShadow:"none",padding:0}}
+          contentArrowStyle={{position:'static'}}
+
         >
           <div className={styles.point}>
           <div className={styles.title}>Q3 2023</div>
@@ -35,6 +36,7 @@ const RoadMap = () => {
           iconClassName={styles.eclipse}
           icon={<Eclipse/>}
           contentStyle={{boxShadow:"none",padding:0}}
+          contentArrowStyle={{position:'static'}}
         >
           <div className={styles.point}>
           <div className={styles.title}>Q4 2023</div>
@@ -50,6 +52,7 @@ const RoadMap = () => {
           iconClassName={styles.eclipse}
           icon={<Eclipse/>}
           contentStyle={{boxShadow:"none",padding:0}}
+          contentArrowStyle={{position:'static'}}
         >
           <div className={styles.point}>
           <div className={styles.title}>Q1 2024</div>
@@ -64,6 +67,7 @@ const RoadMap = () => {
           iconClassName={styles.eclipse}
           icon={<Eclipse/>}
           contentStyle={{boxShadow:"none",padding:0}}
+          contentArrowStyle={{position:'static'}}
         >
           <div className={styles.point}>
           <div className={styles.title}>November 2024</div>
@@ -78,6 +82,7 @@ const RoadMap = () => {
           iconClassName={styles.eclipse}
           icon={<Eclipse/>}
           contentStyle={{boxShadow:"none",padding:0}}
+          contentArrowStyle={{position:'static'}}
         >
           <div className={styles.point}>
           <div className={styles.title}>June 2024</div>
