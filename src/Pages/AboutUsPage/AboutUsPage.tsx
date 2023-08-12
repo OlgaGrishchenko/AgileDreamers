@@ -7,6 +7,7 @@ import Button, { ButtonTypes } from "../../Components/Button";
 import RoadMap from "../../Components/RoadMap";
 
 import styles from "./AboutUsPage.module.css";
+import ButtonContainer from "../../Components/ButtonContainer";
 
 const AboutUsPage = () => {
   return (
@@ -32,28 +33,7 @@ const AboutUsPage = () => {
                 developers for service providers and product companies.
               </div>
             </div>
-
-              <div className={styles.buttons}>
-                <Button
-                  className={styles.buttonSmall}
-                  title={"Service Providers"}
-                  type={ButtonTypes.BigPrimary}
-                  onClick={() => {}}
-                />
-                <Button
-                  className={styles.buttonSmall}
-                  title={"Become a Provider"}
-                  type={ButtonTypes.BigSecondary}
-                  onClick={() => {}}
-                />
-                <Button
-                  className={styles.buttonBig}
-                  title={"Become a Freelance Developer"}
-                  type={ButtonTypes.BigSecondary}
-                  onClick={() => {}}
-                />
-              </div>
-
+            <ButtonContainer/>
             <div className={styles.logo}><AboutUsLogo /></div>
           </div>
         </div>

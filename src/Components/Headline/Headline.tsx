@@ -7,6 +7,7 @@ import Button, { ButtonTypes } from "../Button";
 import Ukraine from "../Ukraine";
 
 import styles from "./Headline.module.css";
+import ButtonContainer from "../ButtonContainer";
 
 const Headline = () => {
   return (
@@ -40,26 +41,7 @@ const Headline = () => {
         </div>
 
         <div className={styles.containerBottom}>
-          <div className={styles.buttons}>
-            <Button
-              className={styles.button}
-              title={"Service Providers"}
-              type={ButtonTypes.BigPrimary}
-              onClick={() => {}}
-            />
-            <Button
-              className={styles.button}
-              title={"Become a Provider"}
-              type={ButtonTypes.BigSecondary}
-              onClick={() => {}}
-            />
-            <Button
-              className={styles.buttonBig}
-              title={"Become a Freelance Developer"}
-              type={ButtonTypes.BigSecondary}
-              onClick={() => {}}
-            />
-          </div>
+          <ButtonContainer/>
         </div>
       </div>
     </div>

@@ -1,0 +1,18 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 488px;
+}
+.topButtonContainer {
+    display: flex;
+    gap:16px;
+}
+
+.buttonBig {
+    width: 408px;
+}
+
+.button {
+    width: 155px;
+}
