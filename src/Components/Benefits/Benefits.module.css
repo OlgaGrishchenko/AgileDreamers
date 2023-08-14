@@ -5,6 +5,7 @@
 .container {
   max-width: 1216px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: 0 auto;
   gap: 56px;

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Router from "./Pages/Router";
 import "./App.css";
 import { Helmet } from "react-helmet";
 
 function App() {
+
   return (
     <div className="App">
       <Helmet>

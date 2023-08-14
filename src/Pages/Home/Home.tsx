@@ -11,7 +11,7 @@ import styles from "./Home.module.css";
 
 const MOCK_CARD = {
   id: 1,
-  companyName: "Capix",
+  companyName: "Agile Dreamers",
   companyDescription:
     "Fintech professional with decades of experience in the capital and financial markets",
   budget: 10000,

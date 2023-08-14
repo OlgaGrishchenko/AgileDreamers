@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import classnames from "classnames";
 
 import styles from "./Footer.module.css";
@@ -7,6 +8,7 @@ import { LinkedinIcon } from "../../Assets/Footer/LinkedinIcon";
 import { TelegramIcon } from "../../Assets/Footer/TelegramIcon";
 import { GmailIcon } from "../../Assets/Footer/GmailIcon";
 import { Logo } from "../../Assets/Footer/Logo";
+import { PathNames } from "../../Pages/Router/Router";
 
 const Footer = () => {
   return (
@@ -24,13 +26,13 @@ const Footer = () => {
               <div className={styles.text}>Tbilisi, Georgia</div>
               <div className={styles.icons}>
                 <div className={styles.link}>
-                  <LinkedinIcon />
+                <a href="https://www.linkedin.com/company/agiledreamers/" target="_blank"><LinkedinIcon /></a>
                 </div>
                 <div className={styles.link}>
-                  <TelegramIcon />
+                <a href="https://www.t.me/AgileDreamers" target="_blank"><TelegramIcon /></a>
                 </div>
-                <div className={styles.link}>
-                  <GmailIcon />
+                <div className={styles.link}> 
+                <a href="mailto:сontact@agiledreamers.com" target="_blank"><GmailIcon /></a>
                 </div>
               </div>
             </div>
@@ -38,10 +40,10 @@ const Footer = () => {
             <div className={styles.containerTopLinks}>
               <div className={styles.title}>Sitemap</div>
               <div className={classnames(styles.text, styles.links)}>
-                <div className={styles.link}>SaaS Service Providers</div>
-                <div className={styles.link}>Outsourcing Software Teams</div>
-                <div className={styles.link}>Outstaffing Service</div>
-                <div className={styles.link}>Software Developers</div>
+                <NavLink to={PathNames.Providers} className={styles.link} onClick={() => window.scrollTo(0,0)}>SaaS Service Providers</NavLink>
+                <NavLink to={PathNames.Developers} className={styles.link}>Outsourcing Software Teams</NavLink>
+                <NavLink to={PathNames.Services} className={styles.link}>Outstaffing Service</NavLink>
+                <NavLink to={PathNames.Developers} className={styles.link}>Software Developers</NavLink>
               </div>
             </div>
           </div>

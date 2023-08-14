@@ -7,9 +7,9 @@ import { InputTypes } from "../Input/Input";
 import Multiselect from "multiselect-react-dropdown";
 import { InlineWidget } from "react-calendly";
 
-import styles from "./ContactBlock.module.css";
+import styles from "./Calendly.module.css";
 
-const ContactBlock = () => {
+const Calendly = () => {
   const keyAreas = [
     { name: "Platform Development", id: 1 },
     { name: "Software Development", id: 2 },
@@ -22,12 +22,11 @@ const ContactBlock = () => {
 
   return (
     <div className={styles.wrap}>
-      <div className={styles.container}>
-      
-      <InlineWidget url="https://calendly.com/olg-grishchenko"/>
+      <div className={styles.container}> 
+      <InlineWidget url="https://calendly.com/agiledreamers-com" styles={{height: '700px'}}/>
       </div>
     </div>
   );
 };
 
-export default ContactBlock;
+export default Calendly;

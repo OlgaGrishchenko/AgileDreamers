@@ -1,350 +1,170 @@
 .wrap {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 64px;
 }
 
 .darkBlock {
   background: #1d1e2c;
   display: flex;
-  flex-direction: column;
-  gap: 160px;
   text-align: start;
 }
 
 .whiteBlock {
   display: flex;
   flex-direction: column;
-  gap: 160px;
+  gap: 120px;
   text-align: start;
 }
 
 .container {
-  max-width: 1300px;
+  width: 1216px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  text-align: start;
 }
 
-.body {
+.headline {
+  padding: 72px 0;
   display: flex;
-  flex-direction: column;
-  gap: 160px;
+  justify-content: space-between;
 }
 
-.padding {
-  padding-top: 99px;
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .title {
   color: #fcfcfc;
   font-family: Kanit;
-  font-size: 120px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120px;
-  margin-bottom: 32px;
-}
-
-.subtitle {
-  font-family: Kanit;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 96px;
-  text-align: start;
-  width: fit-content;
-  padding-bottom: 8px;
-}
-
-.darkSubtitle {
-  color: #1d1e2c;
-}
-
-.lightSubtitle {
-  color: #fcfcfc;
-}
-
-.borderSubtitle {
-  border-bottom: 4px solid #5b7cfe;
-}
-
-.headLine {
-  max-width: 1300px;
-  margin: 0 auto;
-  text-align: start;
-  padding: 48px 0 120px;
-}
-
-.headLineDescription {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 56px;
-}
-
-.headLineText {
-  color: #fcfcfc;
-  font-family: Karla;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
-
-.headLineContainer {
-  display: flex;
-  gap: 48px;
-  align-items: center;
-}
-
-.yourWay {
-  padding-bottom: 64px;
-  border-bottom: 4px solid #5b7cfe;
-  width: 1300px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.yourWayLeft {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  padding-right: 32px;
-  border-right: 1px solid rgba(91, 124, 254, 0.32);
-}
-
-.yourWaySubtitle {
-  color: #1d1e2c;
-  font-family: Karla;
-  font-size: 56px;
+  font-size: 61px;
   font-style: normal;
   font-weight: 500;
   line-height: 64px;
-  cursor: pointer;
-  transition: all 0.3s;
+  text-transform: uppercase;
 }
 
-.yourWaySubtitle:hover {
-  color: #5b7cfe;
+.containerDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 592px;
 }
 
-.yourWaySubtitle:active {
+.description {
   color: #fcfcfc;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1px;
 }
 
-.yourWayRight {
+.button {
+  width: max-content;
+  font-size: 16px;
+}
+
+.fullTeam {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 386px;
+}
+
+.team {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 28px 64px 0 24px;
-  text-align: center;
 }
 
-.yourWayDescription {
-  color: #1d1e2c;
-  font-family: Karla;
-  font-size: 24px;
+.teamTitle {
+  color: #fcfcfc;
+  font-family: Kanit;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  max-width: 567px;
-  text-align: start;
 }
 
-.table {
+.teamStructure {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  row-gap: 64px;
-}
-.team {
-  padding-bottom: 16px;
-  border-bottom: 1px solid rgba(91, 124, 254, 0.64);
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 420px;
-  height: 144px;
+  row-gap: 8px;
+  column-gap: 4px;
 }
 
-.teamIcon {
-  width: 90px;
-  height: 80px;
-}
-
-.teamName {
-  color: #1d1e2c;
+.area {
+  border-radius: 100px;
+  border: 1px solid #5b7cfe;
+  width: 190px;
+  color: #fcfcfc;
+  text-align: center;
   font-family: Karla;
-  font-size: 40px;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 48px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 8px 0;
+  box-sizing: border-box;
 }
 
-.futureCards {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+.bigSize {
+  width: 384px;
+  box-sizing: border-box;
 }
 
-.futureCard {
-  width: 420px;
-  height: 500px;
-  border-radius: 20px;
-  padding: 32px;
-  position: relative;
-}
-
-.blueCard {
-  background-color: #5b7cfe;
-  overflow: hidden;
-}
-
-.whiteCard {
-  background-color: #fcfcfc;
-  position: relative;
-}
-
-.futureCardTitle {
-  color: #1d1e2c;
-  font-family: Kanit;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 52px;
-  text-transform: uppercase;
-}
-
-.futureCardSubtitle {
-  color: #1d1e2c;
-  font-family: Kanit;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  max-width: 263px;
-}
-
-.futureCardText {
-  color: #1d1e2c;
+.teamDescription {
+  color: #fcfcfc;
   font-family: Karla;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0.08px;
+  max-width: 373px;
 }
 
-.futureCardTextBlue {
-  color: #5b7cfe;
-}
-
-.firstFutureCard {
+.stages {
   display: flex;
-  flex-direction: column;
-  gap: 32px;
+  justify-content: space-between;
 }
 
-.secondFutureCard {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.futureCardSubtitleRight {
-  text-align: end;
-  max-width: 236px;
-  position: absolute;
-  right: 32px;
-  bottom: 32px;
-}
-
-.positionArrowCircle {
-  position: absolute;
-  right: 32px;
-  bottom: 32px;
-}
-
-.positionLine {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.thirdFutureCard {
+.stage {
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px 0px rgba(175, 175, 175, 0.25);
+  width: 384px;
+  height: 216px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  position: absolute;
-  bottom: 32px;
-  right: 32px;
-  left: 32px;
+  box-sizing: border-box;
 }
 
-.positionWaves {
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow: hidden;
+.stageTitle {
+  color: #5b7cfe;
+  font-family: Kanit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
 }
 
-.paddingSubtitle {
-  padding-bottom: 20px;
-}
-
-.containerStart {
-  display: flex;
-  flex-direction: column;
-  gap: 68px;
-  position: relative;
-}
-
-.containerStartOne {
-  max-width: 1300px;
-  display: flex;
-  justify-content: start;
-}
-
-.containerStartTwo {
-  max-width: 1300px;
-  display: flex;
-  justify-content: center;
-}
-
-.containerStartThree {
-  max-width: 1300px;
-  display: flex;
-  justify-content: end;
-}
-
-.startDesc {
-  color:#FCFCFC;
-font-family: Karla;
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: 54px;
-max-width: 700px;
-}
-
-.startDescBlue {
-  color:#5B7CFE;
-  max-width: 1300px;
-}
-
-.startRightLine {
-  position: absolute;
-  right: 0;
-  top: 43px;
-}
-
-.startLeftLine {
-  position: absolute;
-  left: 0;
-  bottom: 200px;
+.stageDesk {
+  color: #1d1e2c;
+  max-width: 320px;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.08px;
 }

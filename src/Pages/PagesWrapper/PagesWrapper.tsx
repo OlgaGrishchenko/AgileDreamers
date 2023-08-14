@@ -6,7 +6,7 @@ import Header from "../../Components/Header";
 
 import styles from "./PagesWrapper.module.css";
 import Home from "../Home";
-import ContactBlock from "../../Components/ContactBlock";
+import Calendly from "../../Components/Calendly";
 
 const PagesWrapper = () => {
   const { pathname } = useLocation();
@@ -15,7 +15,7 @@ const PagesWrapper = () => {
     <div className={styles.container}>
       <Header />
       {pathname === PathNames.Home ? <Home /> : <Outlet />}
-      <ContactBlock />
+      <Calendly />
       <Footer />
     </div>
   );

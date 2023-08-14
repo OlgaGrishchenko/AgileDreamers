@@ -1,0 +1,21 @@
+.wrap {
+  width: 100vw;
+  background-color: #1d1e2c;
+  margin-top: 120px;
+}
+
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+
+
+.vidget {
+  position: absolute;
+  height: 700px;
+  width: 320px;
+  bottom: 200px;
+  z-index: 30;
+
+}

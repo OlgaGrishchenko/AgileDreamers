@@ -36,6 +36,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
 
   return (
     <div className={styles.card}>
+      <div className={styles.cardInfo}>
       <div className={styles.first}>
         <div><img src={avatar} className={styles.avatar} /></div>
         <div className={styles.info}>
@@ -53,12 +54,10 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
             </div>
           </div>
         </div>
-      </div>
-
-
-      <div className={styles.second}>
+        </div>
         <div className={styles.text}>{companyDescription}</div>
       </div>
+
 
       <div className={styles.third}>
       <Button

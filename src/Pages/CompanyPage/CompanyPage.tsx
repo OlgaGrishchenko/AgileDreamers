@@ -13,9 +13,9 @@ import { ClockIcon } from "../../Assets/CompanyCard/ClockIcon";
 
 const MOCK_CARD = {
   id: 1,
-  companyName: "Artkai.ai",
+  companyName: "Agile Dreamers",
   companyDescription:
-    "Artkai is a Customer-centric digital product innovation. We help entrepreneurs, innovators, industry disruptors and established businesses shape and launch digital products using a human-centered and research-based approach (certified by NN/g)",
+    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
   budget: 8000,
   teamSize: 100,
   foundationDate: 2015,
@@ -36,9 +36,6 @@ const MOCK_CARD = {
     { name: "vue.js" },
     { name: "Kubernetes" },
     { name: "Chai" },
-    
-    
-    
     { name: "Docker" },
     { name: "MySQL" },
     { name: "MongoDB" },
@@ -74,7 +71,11 @@ const CompanyPage = () => {
         <div className={styles.card}>
           <div className={styles.cardAnswers}>
             <div>
-              <img src={MOCK_CARD.avatar} className={styles.avatar} alt='avatar' />
+              <img
+                src={MOCK_CARD.avatar}
+                className={styles.avatar}
+                alt="avatar"
+              />
             </div>
 
             <div>
@@ -118,10 +119,6 @@ const CompanyPage = () => {
         </div>
       </div>
 
-
-
-
-
       <div className={styles.containerInfo}>
         <div className={styles.desc}>
           <div className={styles.title}>The story behind</div>
@@ -131,14 +128,12 @@ const CompanyPage = () => {
         </div>
 
         <div className={styles.containerAreas}>
-        <div className={styles.subtitle}>Company specializes in</div>
-        <div className={styles.areas}>
-          {MOCK_CARD.softwareStack.map( ( {name}) => {
-            return (
-              <span className={styles.area}> {name} </span>
-            )
-          })}
-        </div>
+          <div className={styles.subtitle}>Company specializes in</div>
+          <div className={styles.areas}>
+            {MOCK_CARD.softwareStack.map(({ name }) => {
+              return <span className={styles.area}> {name} </span>;
+            })}
+          </div>
         </div>
       </div>
     </div>
