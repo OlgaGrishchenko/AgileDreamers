@@ -40,7 +40,7 @@ const Footer = () => {
             <div className={styles.containerTopLinks}>
               <div className={styles.title}>Sitemap</div>
               <div className={classnames(styles.text, styles.links)}>
-                <NavLink to={PathNames.Providers} className={styles.link} onClick={() => window.scrollTo(0,0)}>SaaS Service Providers</NavLink>
+                <div className={styles.link}>SaaS Service Providers</div>
                 <NavLink to={PathNames.Developers} className={styles.link}>Outsourcing Software Teams</NavLink>
                 <NavLink to={PathNames.Services} className={styles.link}>Outstaffing Service</NavLink>
                 <NavLink to={PathNames.Developers} className={styles.link}>Software Developers</NavLink>

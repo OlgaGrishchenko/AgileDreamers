@@ -147,8 +147,15 @@
   flex-direction: column;
   gap: 16px;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
+.stageSVG {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+}
 .stageTitle {
   color: #5b7cfe;
   font-family: Kanit;
@@ -167,4 +174,171 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.08px;
+}
+
+.containerSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.containerTitle {
+  color: #1d1e2c;
+  font-family: Kanit;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.78px;
+  padding-bottom: 8px;
+  border-bottom: 4px solid #5b7cfe;
+  width: max-content;
+}
+
+.containerStepsGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: space-between;
+}
+
+.stepsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+}
+
+.step {
+  max-width: 776px;
+  color: #1d1e2c;
+  font-family: Kanit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  position: relative;
+  padding-left: 22px;
+}
+
+.stepsEllipse {
+  position: absolute;
+  left: 0;
+  top: -8px;
+  z-index: -1;
+}
+
+.stepsComment {
+  max-width: 574px;
+  color: #9a9a9a;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #9a9a9a;
+  margin: 0 0 0 auto;
+}
+
+.containerFutures {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.futuresCards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 384px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: #5b7cfe;
+  position: relative;
+  overflow: hidden;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.whiteCard {
+  background-color: #fcfcfc;
+  box-shadow: 0px 4px 10px 0px rgba(175, 175, 175, 0.25);
+}
+
+.futureOne {
+  position: absolute;
+  right: 32px;
+  bottom: 52px;
+}
+
+.futureTwo{
+  position: absolute;
+  left: 32px;
+  top: 32px;
+}
+
+.futureTwoLine {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+}
+
+.futureThree{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.futureTitle {
+  color: #FCFCFC;
+  font-family: Kanit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.futureTitleDark {
+  color: #1D1E2C;
+  max-width: 280px;
+  text-align: end;
+  margin: 0 0 0 auto;
+}
+
+.futureDesc {
+  color: #1D1E2C;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+}
+
+.futureDescDark {
+  color: #5B7CFE;
+}
+
+.futureOneText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.futureTwoText {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+.futureThreeText {
+  margin-top: 265px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
