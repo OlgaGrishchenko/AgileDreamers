@@ -1,4 +1,5 @@
 import React from "react";
+import { ProvidersImgHeadline } from "../../Assets/ProvidersPage/ProvidersImgHeadline";
 import CompanyCardList from "../../Components/CompanyCardList";
 import SearchLine from "../../Components/SearchLine";
 
@@ -24,11 +25,35 @@ const MOCK_CARD = {
 const MOCK_CARD_LIST = [MOCK_CARD, MOCK_CARD, MOCK_CARD, MOCK_CARD];
 
 const ProvidersPage = () => {
-
   return (
-    <div className={styles.container}>
-      <SearchLine />
-      <CompanyCardList cardsList={MOCK_CARD_LIST} />
+    <div className={styles.wrap}>
+      <div className={styles.darkBlock}>
+        <div className={styles.container}>
+          <div className={styles.headline}>
+            <div className={styles.headlineDesc}>
+              <div className={styles.headlineTitle}>
+                SELECT YOUR DEVELOPMENT TEAM
+              </div>
+              <div className={styles.headlineText}>
+                <li>Filter to find several software development or SaaS vendor</li>
+                <li>Talk directly to the C-Level to discuss your project</li>
+                <li>Get the most attractive proposals from different vendors</li>
+                <li>Compare to choose the most dedicated service</li>
+                <li>Launch your software development PROJECT on Agile Dreamers Platform</li>
+                <li>Request Client Supervision service for FREE!</li>
+              </div>
+            </div>
+
+            <div className={styles.headlineImage}>
+              <ProvidersImgHeadline />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.container}>
+        <SearchLine />
+        <CompanyCardList cardsList={MOCK_CARD_LIST} />
+      </div>
     </div>
   );
 };

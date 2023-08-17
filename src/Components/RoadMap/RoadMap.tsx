@@ -20,7 +20,7 @@ const RoadMap = () => {
           icon={<Eclipse/>}
           contentStyle={{boxShadow:"none",padding:0}}
           contentArrowStyle={{position:'static'}}
-
+          onTimelineElementClick={()=>{}}
         >
           <div className={styles.point}>
           <div className={styles.title}>Q3 2023</div>

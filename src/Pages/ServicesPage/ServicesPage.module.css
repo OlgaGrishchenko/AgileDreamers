@@ -1,174 +1,129 @@
 .wrap {
-  margin-top: 80px;
   display: flex;
   flex-direction: column;
-  gap: 160px;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 160px;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-.whiteBlock {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+  gap: 64px;
 }
 
 .darkBlock {
   background: #1d1e2c;
   display: flex;
-  flex-direction: column;
-  gap: 80px;
-  padding: 100px 0 80px;
+  padding: 72px;
+  position: relative;
 }
 
-.block {
-  max-width: 1300px;
+.whiteBlock {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+
+.container {
+  max-width: 1216px;
   margin: 0 auto;
+}
+
+.headline {
+  width: 1216px;
+}
+
+.headlineDesc {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 24px;
   text-align: start;
 }
 
-.title {
-  color: #1d1e2c;
-  font-family: Kanit;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 96px;
-  text-align: start;
-  width: max-content;
-  border-bottom: 4px solid #5b7cfe;
-  padding-bottom: 8px;
-}
-
-.darkTitle {
+.headlineTitle {
   color: #fcfcfc;
-}
-
-.cardsBlock {
-  display: flex;
-  gap: 20px;
-}
-
-.card {
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  border-radius: 20px;
-  border: 2px solid #5b7cfe;
-  width: 420px;
-  text-align: start;
-}
-
-.cardTitle {
-  color: #5b7cfe;
   font-family: Kanit;
-  font-size: 40px;
+  font-size: 61px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 44px;
+  font-weight: 500;
+  line-height: 64px;
   text-transform: uppercase;
-  border-bottom: 2px solid #5b7cfe;
-  padding-bottom: 16px;
 }
 
 .description {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
-.cardDescription {
-  color: #1d1e2c;
+.subTitle {
+  color: #fff;
+  font-family: Kanit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  opacity: 0.9;
+}
+
+.text {
+  color: #d4d4d4;
   font-family: Karla;
-  font-size: 24px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  opacity: 0.9;
+}
+
+.headlineImage {
+  position: absolute;
+  right: 0;
+  top: 72px;
+}
+
+.containerLists {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  width: 1216px;
+}
+
+.containerList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardList {
+  width: 488px;
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px 0px rgba(175, 175, 175, 0.25);
+  box-sizing: border-box;
+  height: max-content;
+  text-align: start;
+}
+
+.cardListTitle {
+  color: #5b7cfe;
+  font-family: Kanit;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
 }
 
-.cardArrow {
-  margin: 0 auto;
-}
-
-.areas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-.areaBlue {
-  padding: 16px 32px;
-  border-radius: 100px;
-  background: #5b7cfe;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
-  color: #fcfcfc;
-  font-size: 24px;
-  font-family: Kanit;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-}
-
-.area {
-  padding: 16px 32px;
-  border-radius: 100px;
-  border: 2px solid #5b7cfe;
-  color: #1d1e2c;
-  font-size: 24px;
-  font-family: Kanit;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-}
-
-.text {
-  font-family: Karla;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 80px;
-  color: 1px solid blue;
-}
-
-.containerSolutions {
+.list{
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 8px;
+  align-items: flex-start;
 }
 
-.solutions {
-  display: flex;
-  gap: 16px;
-  align-items: flex-end;
-  padding-bottom: 13px;
-  border-bottom: 1px solid rgba(252, 252, 252, 0.32);
-  width: 1300px;
-}
-
-.solutionsIcon {
-  width: 90px;
-  height: 80px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.solutionsName {
-  color: #fcfcfc;
-  font-family: Karla;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48px;
+.li {
+  color: #1D1E2C;
+font-family: Karla;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.1px;
 }
