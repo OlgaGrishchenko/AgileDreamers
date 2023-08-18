@@ -2,11 +2,9 @@
   margin: 0 auto;
   max-width: 1216px;
   margin-top: 40px;
-  margin-bottom: 64px;
 }
 
 .containerButton {
-  margin-bottom: 56px;
   width: max-content;
 }
 
@@ -106,6 +104,7 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
+  width: 280px;
 }
 
 .personalAvatar {

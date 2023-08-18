@@ -35,12 +35,12 @@ const ProvidersPage = () => {
                 SELECT YOUR DEVELOPMENT TEAM
               </div>
               <div className={styles.headlineText}>
-                <li>Filter to find several software development or SaaS vendor</li>
-                <li>Talk directly to the C-Level to discuss your project</li>
-                <li>Get the most attractive proposals from different vendors</li>
-                <li>Compare to choose the most dedicated service</li>
-                <li>Launch your software development PROJECT on Agile Dreamers Platform</li>
-                <li>Request Client Supervision service for FREE!</li>
+                <li className={styles.li}>Filter to find several software development or SaaS vendor</li>
+                <li className={styles.li}>Talk directly to the C-Level to discuss your project</li>
+                <li className={styles.li}>Get the most attractive proposals from different vendors</li>
+                <li className={styles.li}>Compare to choose the most dedicated service</li>
+                <li className={styles.smallLi}>Launch your software development PROJECT on Agile Dreamers Platform</li>
+                <li className={styles.li}>Request Client Supervision service for FREE!</li>
               </div>
             </div>
 
