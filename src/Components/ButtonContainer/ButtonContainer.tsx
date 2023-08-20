@@ -1,4 +1,4 @@
-import styles from "../Headline/Headline.module.css";
+import styles from "../ButtonContainer/ButtonContainer.module.css";
 import Button, {ButtonTypes} from "../Button";
 import React from "react";
 

@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { CompanyCardListType } from "../../Constants/@types";
 import CompanyCard from "../CompanyCard";
 
@@ -10,13 +10,11 @@ type CardsListProps = {
 
 const CompanyCardList: FC<CardsListProps> = ({ cardsList }) => {
   return cardsList && cardsList.length > 0 ? (
-    <div className={styles.wrap}>
       <div className={styles.container}>
         {cardsList.map((card) => {
           return <CompanyCard card={card} key={card.id} />;
         })}
       </div>
-    </div>
   ) : null;
 };
 

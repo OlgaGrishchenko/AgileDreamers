@@ -7,7 +7,7 @@ export const VueJS = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_2470_2207)">
+      <g clipPath="url(#clip0_2470_2207)">
         <path
           d="M40.1217 0.000579834L32.6452 12.9329L25.1687 0.000579834H0.270996L32.6452 56L65.0194 0.000579834H40.1217Z"
           fill="#41B883"

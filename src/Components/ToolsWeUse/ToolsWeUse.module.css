@@ -43,3 +43,29 @@
   filter: grayscale(100%);
   align-content: center;
 }
+@media (max-width: 768px) {
+  .container {
+    max-width: 672px;
+    gap: 32px;
+  }
+  .icons svg {
+    width:32px;
+    height: 32px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 288px;
+    gap: 24px;
+    align-items: center;
+  }
+  .tabslist {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .icons {
+    max-width: 288px;
+    gap:24px;
+  }
+}

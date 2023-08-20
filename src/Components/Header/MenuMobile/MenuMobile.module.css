@@ -1,0 +1,78 @@
+.menu {
+    display: none;
+}
+
+
+@media (max-width: 320px) {
+    .wrap {
+        width: 100%;
+        padding: 8px 0px;
+    }
+    .container {
+        padding: 0 16px 0 16px;
+        margin: 0;
+        max-width: 288px;
+        gap:44px;
+    }
+    .hideSidebar,.hideBtn {
+        display: none;
+    }
+    .containerLogo {
+        width:37px;
+        height: 32px;
+    }
+    .containerLogo svg{
+        width:37px;
+        height: 32px;
+    }
+    .burger {
+        width:32px;
+        height: 32px;
+    }
+    .burger,.logoMobile {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        left:0;
+        right:0;
+        top:48px;
+        height: calc(100vh - 130px);
+        background-color: #FCFCFC;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 16px 32px 16px;
+        max-width: 288px;
+    }
+    .openMenu {
+        background-color: #FCFCFC;
+        box-shadow: 0 1px 0 0 #B9C7FF29;
+    }
+    .categoriesMobile {
+        text-decoration: none;
+        font-family: Karla;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: start;
+        transition: all 0.5s;
+        color: #1D1E2C;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .containerButtonsBurger {
+        max-width: 288px;
+        display:flex;
+        flex-direction: column;
+        gap:16px;
+    }
+    .button {
+        box-sizing: border-box;
+        width:100%;
+        color: #1D1E2C;
+    }
+}

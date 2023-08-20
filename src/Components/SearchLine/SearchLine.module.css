@@ -43,3 +43,69 @@
   letter-spacing: 0.08px;
   color: #1d1e2c;
 }
+.filtersBurger {
+  display:none;
+}
+
+@media  (max-width: 768px){
+  .wrap {
+    max-width: 672px;
+    margin-bottom: 32px;
+    margin-top: 56px;
+    padding: 0 48px 0 48px;
+  }
+  .container {
+    max-width: 672px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap:16px;
+  }
+  .filterContainer {
+    display: flex;
+    gap:8px;
+  }
+  .checkPicker {
+    width: 100%;
+    height: 48px;
+  }
+  .tabletInput {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrap {
+    max-width: 288px;
+    margin-bottom: 32px;
+    margin-top: 40px;
+    padding: 0 16px 16px 16px;
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+  }
+  .hideFilters {
+    display:none;
+  }
+  .mobileInput {
+    max-width:232px ;
+  }
+  .container {
+    max-width: 288px;
+    flex-direction: row;
+    gap:8px;
+  }
+  .filtersBurger {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #1D1E2C0A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .blueColor{
+    background: #5B7CFE;
+  }
+}

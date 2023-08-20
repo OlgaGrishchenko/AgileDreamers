@@ -16,16 +16,21 @@ type ButtonProps = {
    onClick?: () => void;
    className?: string;
    disabled?: boolean;
+   tablet?:boolean;
+   tabletSignUp?:boolean;
+   mobileLightColor?:boolean;
+   mobileDarkColor?:boolean;
 };
 
 const Button: FC<ButtonProps> = (props) => {
-   const { type, title, onClick, className, disabled } = props;
+   const { type, title, onClick, className, disabled,tablet ,tabletSignUp,mobileLightColor,mobileDarkColor} = props;
 
    const buttonClassName = styles[type];
 
    return (
       <div
-         className={classNames(styles.button, buttonClassName, className, {[styles.disabled]: !!disabled,})}
+         className={classNames(styles.button, buttonClassName, className, {[styles.disabled]: !!disabled},{[styles.responsiveBtn]:tablet},
+             {[styles.responsiveSignUp]:tabletSignUp},{[styles.mobileLight]:mobileLightColor},{[styles.mobileDark]:mobileDarkColor})}
          onClick={onClick}
       >
       {title}

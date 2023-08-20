@@ -9,14 +9,16 @@ import { TelegramIcon } from "../../Assets/Footer/TelegramIcon";
 import { GmailIcon } from "../../Assets/Footer/GmailIcon";
 import { Logo } from "../../Assets/Footer/Logo";
 import { PathNames } from "../../Pages/Router/Router";
+import {LogoMobile} from "../../Assets/Footer/LogoMobile";
 
 const Footer = () => {
   return (
     <div className={styles.wrap}>
+      <div className={styles.logoMobile}><LogoMobile /></div>
       <div className={styles.logo}><Logo /></div>
       <div className={styles.container}>
         <div className={styles.containerTop}>
-          <div>
+          <div className={styles.logoContainer}>
             <LogoIcon />
           </div>
 

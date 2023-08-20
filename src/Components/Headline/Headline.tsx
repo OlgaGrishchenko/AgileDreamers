@@ -8,15 +8,16 @@ import Ukraine from "../Ukraine";
 
 import styles from "./Headline.module.css";
 import ButtonContainer from "../ButtonContainer";
+import classNames from "classnames";
 
 const Headline = () => {
   return (
     <div className={styles.wrap}>
-      <div className={styles.line}>
+      <div className={classNames(styles.line,styles.hideImage)}>
         <Line />
       </div>
       <div className={styles.container}>
-        <div className={styles.ukraine}>
+        <div className={classNames(styles.ukraine,styles.hideLogo)}>
           <Ukraine />
         </div>
 
@@ -35,7 +36,7 @@ const Headline = () => {
               approach.
             </div>
           </div>
-          <div className={styles.image}>
+          <div className={classNames(styles.image,styles.hideImage)}>
             <Puzzle />
           </div>
         </div>

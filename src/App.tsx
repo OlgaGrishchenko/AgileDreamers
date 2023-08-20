@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Router from "./Pages/Router";
 import "./App.css";
-import { Helmet } from "react-helmet";
+import {Helmet, HelmetProvider,} from "react-helmet-async";
+
 
 function App() {
 
   return (
+      <HelmetProvider>
     <div className="App">
       <Helmet>
         <meta charSet="utf-8" />
@@ -16,6 +18,7 @@ function App() {
       </Helmet>
       <Router />
     </div>
+      </HelmetProvider>
   );
 }
 

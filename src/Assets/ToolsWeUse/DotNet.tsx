@@ -152,10 +152,10 @@ export const DotNet = () => {
           y2="43.247"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#0994DC" />
-          <stop offset="0.35" stop-color="#66CEF5" />
-          <stop offset="0.846" stop-color="#127BCA" />
-          <stop offset="1" stop-color="#127BCA" />
+          <stop stopColor="#0994DC" />
+          <stop offset="0.35" stopColor="#66CEF5" />
+          <stop offset="0.846" stopColor="#127BCA" />
+          <stop offset="1" stopColor="#127BCA" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2401_20738"
@@ -165,10 +165,10 @@ export const DotNet = () => {
           y2="43.2166"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#0E76BC" />
-          <stop offset="0.36" stop-color="#36AEE8" />
-          <stop offset="0.846" stop-color="#00ADEF" />
-          <stop offset="1" stop-color="#00ADEF" />
+          <stop stopColor="#0E76BC" />
+          <stop offset="0.36" stopColor="#36AEE8" />
+          <stop offset="0.846" stopColor="#00ADEF" />
+          <stop offset="1" stopColor="#00ADEF" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_2401_20738"
@@ -178,9 +178,9 @@ export const DotNet = () => {
           y2="16.6639"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1C63B7" />
-          <stop offset="0.5" stop-color="#33BDF2" />
-          <stop offset="1" stop-color="#33BDF2" stop-opacity="0.42" />
+          <stop stopColor="#1C63B7" />
+          <stop offset="0.5" stopColor="#33BDF2" />
+          <stop offset="1" stopColor="#33BDF2" stopOpacity="0.42" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_2401_20738"
@@ -190,10 +190,10 @@ export const DotNet = () => {
           y2="41.5517"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#166AB8" />
-          <stop offset="0.4" stop-color="#36AEE8" />
-          <stop offset="0.846" stop-color="#0798DD" />
-          <stop offset="1" stop-color="#0798DD" />
+          <stop stopColor="#166AB8" />
+          <stop offset="0.4" stopColor="#36AEE8" />
+          <stop offset="0.846" stopColor="#0798DD" />
+          <stop offset="1" stopColor="#0798DD" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_2401_20738"
@@ -203,10 +203,10 @@ export const DotNet = () => {
           y2="43.4923"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#124379" />
-          <stop offset="0.39" stop-color="#1487CB" />
-          <stop offset="0.78" stop-color="#165197" />
-          <stop offset="1" stop-color="#165197" />
+          <stop stopColor="#124379" />
+          <stop offset="0.39" stopColor="#1487CB" />
+          <stop offset="0.78" stopColor="#165197" />
+          <stop offset="1" stopColor="#165197" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_2401_20738"
@@ -216,8 +216,8 @@ export const DotNet = () => {
           y2="23.0541"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#33BDF2" stop-opacity="0.698" />
-          <stop offset="1" stop-color="#1DACD8" />
+          <stop stopColor="#33BDF2" stopOpacity="0.698" />
+          <stop offset="1" stopColor="#1DACD8" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_2401_20738"
@@ -227,9 +227,9 @@ export const DotNet = () => {
           y2="16.6614"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#136AB4" />
-          <stop offset="0.6" stop-color="#59CAF5" stop-opacity="0.549" />
-          <stop offset="1" stop-color="#59CAF5" stop-opacity="0.235" />
+          <stop stopColor="#136AB4" />
+          <stop offset="0.6" stopColor="#59CAF5" stopOpacity="0.549" />
+          <stop offset="1" stopColor="#59CAF5" stopOpacity="0.235" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_2401_20738"
@@ -239,8 +239,8 @@ export const DotNet = () => {
           y2="27.9114"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#05A1E6" stop-opacity="0.247" />
-          <stop offset="1" stop-color="#05A1E6" />
+          <stop stopColor="#05A1E6" stopOpacity="0.247" />
+          <stop offset="1" stopColor="#05A1E6" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_2401_20738"
@@ -250,8 +250,8 @@ export const DotNet = () => {
           y2="16.699"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#318ED5" />
-          <stop offset="1" stop-color="#38A7E4" />
+          <stop stopColor="#318ED5" />
+          <stop offset="1" stopColor="#38A7E4" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_2401_20738"
@@ -261,8 +261,8 @@ export const DotNet = () => {
           y2="17.3391"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#05A1E6" />
-          <stop offset="1" stop-color="#05A1E6" stop-opacity="0.549" />
+          <stop stopColor="#05A1E6" />
+          <stop offset="1" stopColor="#05A1E6" stopOpacity="0.549" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_2401_20738"
@@ -272,10 +272,10 @@ export const DotNet = () => {
           y2="21.5397"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1959A6" />
-          <stop offset="0.5" stop-color="#05A1E6" />
-          <stop offset="0.918" stop-color="#7EC5EA" />
-          <stop offset="1" stop-color="#7EC5EA" />
+          <stop stopColor="#1959A6" />
+          <stop offset="0.5" stopColor="#05A1E6" />
+          <stop offset="0.918" stopColor="#7EC5EA" />
+          <stop offset="1" stopColor="#7EC5EA" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_2401_20738"
@@ -285,8 +285,8 @@ export const DotNet = () => {
           y2="19.0097"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#165096" />
-          <stop offset="1" stop-color="#0D82CA" />
+          <stop stopColor="#165096" />
+          <stop offset="1" stopColor="#0D82CA" />
         </linearGradient>
         <linearGradient
           id="paint12_linear_2401_20738"
@@ -296,9 +296,9 @@ export const DotNet = () => {
           y2="17.3457"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#05A1E6" />
-          <stop offset="0.874" stop-color="#0495D6" />
-          <stop offset="1" stop-color="#0495D6" />
+          <stop stopColor="#05A1E6" />
+          <stop offset="0.874" stopColor="#0495D6" />
+          <stop offset="1" stopColor="#0495D6" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_2401_20738"
@@ -308,9 +308,9 @@ export const DotNet = () => {
           y2="38.8062"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#38A7E4" stop-opacity="0.329" />
-          <stop offset="0.962" stop-color="#0E88D3" />
-          <stop offset="1" stop-color="#0E88D3" />
+          <stop stopColor="#38A7E4" stopOpacity="0.329" />
+          <stop offset="0.962" stopColor="#0E88D3" />
+          <stop offset="1" stopColor="#0E88D3" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_2401_20738"
@@ -320,9 +320,9 @@ export const DotNet = () => {
           y2="38.3992"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#168CD4" />
-          <stop offset="0.5" stop-color="#1C87CC" />
-          <stop offset="1" stop-color="#154B8D" />
+          <stop stopColor="#168CD4" />
+          <stop offset="0.5" stopColor="#1C87CC" />
+          <stop offset="1" stopColor="#154B8D" />
         </linearGradient>
         <linearGradient
           id="paint15_linear_2401_20738"
@@ -332,9 +332,9 @@ export const DotNet = () => {
           y2="25.4079"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#97D6EE" />
-          <stop offset="0.703" stop-color="#55C1EA" />
-          <stop offset="1" stop-color="#55C1EA" />
+          <stop stopColor="#97D6EE" />
+          <stop offset="0.703" stopColor="#55C1EA" />
+          <stop offset="1" stopColor="#55C1EA" />
         </linearGradient>
         <linearGradient
           id="paint16_linear_2401_20738"
@@ -344,8 +344,8 @@ export const DotNet = () => {
           y2="12.1997"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7ACCEC" />
-          <stop offset="1" stop-color="#3FB7ED" />
+          <stop stopColor="#7ACCEC" />
+          <stop offset="1" stopColor="#3FB7ED" />
         </linearGradient>
         <linearGradient
           id="paint17_linear_2401_20738"
@@ -355,8 +355,8 @@ export const DotNet = () => {
           y2="39.085"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1DA7E7" />
-          <stop offset="1" stop-color="#37ABE7" stop-opacity="0" />
+          <stop stopColor="#1DA7E7" />
+          <stop offset="1" stopColor="#37ABE7" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

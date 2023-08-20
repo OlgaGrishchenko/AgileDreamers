@@ -1,5 +1,5 @@
 .button {
-  padding: 8px 40px;
+ padding: 8px 40px;
   border-radius: 100px;
   font-family: Karla;
   font-size: 18px;
@@ -16,7 +16,6 @@
 .bigPrimary {
   background-color: #5b7cfe;
   height: 32px;
-
 }
 
 .bigPrimary:hover {
@@ -25,7 +24,6 @@
 }
 
 .bigSecondary {
-  background-color: none;
   border: 1px solid #5b7cfe;
   color: #ffffff;
   height: 32px;
@@ -54,7 +52,6 @@
 }
 
 .smallSecondary {
-  background-color: none;
   color: #5b7cfe;
   border: 1px solid #5b7cfe;
   font-family: Karla;
@@ -71,7 +68,46 @@
 }
 
 .disabled {
-  background-color: none;
   color: #adbeff;
   pointer-events: none;
+}
+@media (max-width: 768px) {
+    .responsiveBtn {
+        box-sizing: border-box;
+        width: 104px;
+        padding: 8px 32px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    .responsiveSignUp {
+        box-sizing: border-box;
+        width: 107px;
+        border:none;
+        outline: 1px solid #5b7cfe;
+    }
+}
+@media (max-width: 320px) {
+    .mobileLight {
+        color:#FCFCFC;
+        font-family: Karla;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        height: 40px;
+    }
+    .mobileDark {
+        font-family: Karla;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        color: #1D1E2C;
+        height: 40px;
+    }
 }

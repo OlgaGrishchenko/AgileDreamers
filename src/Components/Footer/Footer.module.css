@@ -8,6 +8,9 @@
   position: absolute;
   bottom: 71px;
 }
+.logoMobile {
+  display: none;
+}
 
 .container {
   max-width: 1216px;
@@ -87,4 +90,79 @@
 .bottomLinks {
   display: flex;
   gap: 32px;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 672px;
+    padding: 56px 48px 48px 48px;
+  }
+  .logoContainer svg {
+    width:56px;
+    height:80px;
+  }
+
+  .containerTop {
+    display: flex;
+    gap:120px;
+  }
+  .topLinks {
+    gap: 136px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 288px;
+    padding: 40px 16px 24px 16px;
+  }
+  .containerTop {
+    display: flex;
+    flex-direction: row-reverse;
+    gap:44px;
+    padding-right: 0;
+    padding-bottom: 40px;
+  }
+
+  .bottomLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .containerBottom {
+    padding-top: 32px;
+    display: flex;
+    gap:24px;
+    flex-direction: column-reverse;
+  }
+  .topLinks {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .containerTopLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+  .logoContainer svg {
+    width:60px;
+    height:86px;
+  }
+  .logo {
+    display:none;
+  }
+  .logoMobile {
+    display: block;
+    position: absolute;
+  top:40px;
+    right: 0;
+  }
+  .logoMobile g{
+    mix-blend-mode: overlay;
+  }
 }
