@@ -118,6 +118,12 @@ input:focus:-ms-input-placeholder {
   box-sizing: border-box;
 }
 
+@media (max-width: 1330px) {
+  .searchType {
+    width: 256px;
+  }
+}
+
 .searchType::placeholder {
   font-family: Karla;
   font-size: 16px;

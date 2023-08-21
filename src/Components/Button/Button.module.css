@@ -60,7 +60,7 @@
   pointer-events: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .responsiveBtn {
         box-sizing: border-box;
         width: 104px;

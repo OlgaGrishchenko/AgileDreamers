@@ -106,10 +106,17 @@
   bottom: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1330px) {
   .hideImage {
     display: none;
   }
+
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 768px) {
   .container {
     max-width: 672px;
   }
