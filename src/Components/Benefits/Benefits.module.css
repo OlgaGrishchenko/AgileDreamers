@@ -18,11 +18,11 @@
   font-weight: 600;
   line-height: 40px;
   letter-spacing: 0.78px;
-  color: #1D1E2C;
+  color: #1d1e2c;
   text-align: start;
   padding-bottom: 8px;
   width: max-content;
-  border-bottom: 4px solid #5B7CFE;
+  border-bottom: 4px solid #5b7cfe;
 }
 .containerBenefits {
   display: flex;
@@ -41,7 +41,6 @@
   padding-top: 72px;
   align-items: center;
   gap: 8px;
-
 }
 
 .title {
@@ -101,16 +100,10 @@
   z-index: -10;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 768px) {
   .wrap {
     padding: 0 48px;
   }
-
-  .containerBenefits {
-    gap:10px;
-  }
-}
-@media (max-width: 1024px) {
   .container {
     max-width: 672px;
     gap: 32px;
@@ -120,8 +113,9 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap:32px;
+    gap: 32px;
     margin: 0;
+    gap: 10px;
   }
   .containerBenefit {
     width: 320px;

@@ -8,7 +8,7 @@ import Button, { ButtonTypes } from "../Button";
 import Ukraine from "../Ukraine";
 import {BurgerIcon} from "../../Assets/Header/BurgerIcon";
 import {CloseBurgerIcon} from "../../Assets/Header/CloseBurgerIcon";
-import MenuMobile from "./MenuMobile";
+import MenuMobile from "./MenuMobile/MenuMobile";
 
 export const CATEGORIES = [
     { name: "Providers", link: "/providers" },

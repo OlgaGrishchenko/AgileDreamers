@@ -60,18 +60,12 @@
   display: none;
 }
 
-@media (max-width: 1300px) {
-  .wrap {
-    padding: 0 48px;
-  }
-}
-
 @media (max-width: 768px) {
   .wrap {
     max-width: 672px;
     margin-bottom: 32px;
     margin-top: 56px;
-    padding: 0 48px 0 48px;
+    padding: 0 48px;
   }
   .container {
     max-width: 672px;

@@ -89,7 +89,7 @@
 }
 .topButtonContainer {
   display: flex;
-  gap:16px;
+  gap: 16px;
 }
 
 .buttonBig {
@@ -106,32 +106,29 @@
   bottom: 100px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 768px) {
   .wrap {
     padding: 48px;
     width: 100%;
   }
   .hideImage {
-    display:none;
+    display: none;
   }
-}
-@media (max-width: 768px) {
   .container {
     max-width: 672px;
     margin: 0;
   }
-
 }
 @media (max-width: 320px) {
   .wrap {
     max-width: 288px;
-    padding: 40px 16px ;
+    padding: 40px 16px;
   }
   .container {
     max-width: 288px;
   }
   .hideLogo {
-    display:none;
+    display: none;
   }
   .title {
     max-width: 288px;
@@ -150,6 +147,6 @@
     margin-bottom: 24px;
   }
   .containerBottom {
-   flex-direction: column;
+    flex-direction: column;
   }
 }

@@ -44,13 +44,11 @@
   align-content: center;
 }
 
-@media (max-width: 1300px) {
+
+@media (max-width: 768px) {
   .wrap {
     padding: 0 48px;
   }
-}
-
-@media (max-width: 768px) {
   .container {
     gap: 32px;
   }
