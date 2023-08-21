@@ -55,3 +55,13 @@
          padding: 48px;
      }
  }
+
+ .smallLi {
+  max-width: 461px;
+ }
+
+ .smallLi:before{
+  Margin-left:0}
+
+  .li:before{
+    Margin-left:0}

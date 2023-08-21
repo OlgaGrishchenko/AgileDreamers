@@ -3,7 +3,7 @@ env:
   DIGITALOCEAN_REGESTRY : "registry.digitalocean.com/agile-dreamers"
   IMAGE_NAME            : "web-alpine"
   TAG                   : $(echo $GITHUB_SHA | head -c7)
-  PATH_TO_KUSTOMIZE     : "environments/development/frontend/website/kustomization.yaml"
+  PATH_TO_KUSTOMIZE     : "website/overlays/dev/kustomization.yaml"
   
 on:
   workflow_dispatch:
