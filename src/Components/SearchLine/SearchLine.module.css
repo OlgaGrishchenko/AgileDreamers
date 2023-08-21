@@ -7,16 +7,29 @@
   margin: 0 auto;
   max-width: 1216px;
   display: flex;
-  justify-content: space-between;
+  gap:20px;
   opacity: 0;
   transform: translateY(22%);
   animation: ani 1.5s forwards;
 }
 @keyframes ani {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-  0% {transform: translateY(22%);}
-  100% {transform: translateX(0);}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(22%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.filterContainer {
+  display: flex;
+  gap: 20px;
 }
 
 .searchContainer {
@@ -44,10 +57,16 @@
   color: #1d1e2c;
 }
 .filtersBurger {
-  display:none;
+  display: none;
 }
 
-@media  (max-width: 768px){
+@media (max-width: 1300px) {
+  .wrap {
+    padding: 0 48px;
+  }
+}
+
+@media (max-width: 768px) {
   .wrap {
     max-width: 672px;
     margin-bottom: 32px;
@@ -59,11 +78,11 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    gap:16px;
+    gap: 16px;
   }
   .filterContainer {
     display: flex;
-    gap:8px;
+    gap: 8px;
   }
   .checkPicker {
     width: 100%;
@@ -80,32 +99,32 @@
     margin-bottom: 32px;
     margin-top: 40px;
     padding: 0 16px 16px 16px;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap:16px;
+    gap: 16px;
   }
   .hideFilters {
-    display:none;
+    display: none;
   }
   .mobileInput {
-    max-width:232px ;
+    max-width: 232px;
   }
   .container {
     max-width: 288px;
     flex-direction: row;
-    gap:8px;
+    gap: 8px;
   }
   .filtersBurger {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #1D1E2C0A;
+    background: #1d1e2c0a;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
   }
-  .blueColor{
-    background: #5B7CFE;
+  .blueColor {
+    background: #5b7cfe;
   }
 }

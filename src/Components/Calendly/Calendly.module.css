@@ -13,9 +13,8 @@
 
 .vidget {
   position: absolute;
-  height: 700px;
+
   width: 320px;
   bottom: 200px;
   z-index: 30;
-
 }

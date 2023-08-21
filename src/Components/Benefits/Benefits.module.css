@@ -27,6 +27,7 @@
 .containerBenefits {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .containerBenefit {
   width: 280px;
@@ -40,6 +41,7 @@
   padding-top: 72px;
   align-items: center;
   gap: 8px;
+
 }
 
 .title {
@@ -98,18 +100,28 @@
   top: 0;
   z-index: -10;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1300px) {
+  .wrap {
+    padding: 0 48px;
+  }
+
+  .containerBenefits {
+    gap:10px;
+  }
+}
+@media (max-width: 1024px) {
   .container {
     max-width: 672px;
     gap: 32px;
     margin: 0;
-    padding: 0 48px 0 48px;
   }
   .containerBenefits {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap:32px;
+    margin: 0;
   }
   .containerBenefit {
     width: 320px;

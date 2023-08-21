@@ -43,9 +43,15 @@
   filter: grayscale(100%);
   align-content: center;
 }
+
+@media (max-width: 1300px) {
+  .wrap {
+    padding: 0 48px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    max-width: 672px;
     gap: 32px;
   }
   .icons svg {

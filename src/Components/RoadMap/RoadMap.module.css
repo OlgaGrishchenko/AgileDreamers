@@ -90,3 +90,7 @@ li::before {
   content: '';
   margin-left: -18px;
 }
+
+.li:before {
+  margin-left: 0;
+}

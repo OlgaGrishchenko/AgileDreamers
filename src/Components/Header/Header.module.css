@@ -58,17 +58,13 @@
  display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .wrap {
-    width: 100%;
-    padding: 10px 0px;
+    padding: 10px 48px;
   }
-  .container {
-    padding: 0 48px 0 48px;
-    margin: 0;
-    max-width: 672px;
-    gap:31px;
-  }
+}
+
+@media (max-width: 1064px) {
   .containerSidebar {
     gap:16px;
   }
@@ -79,9 +75,17 @@
     letter-spacing: 0;
     text-align: center;
   }
+
   .containerButtons {
     gap:8px;
   }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    width: 100%;
+  }
+
   .containerLogo {
     width:45px;
     height: 40px;

@@ -21,8 +21,6 @@ export const CATEGORIES = [
 const Header = () => {
   const { pathname } = useLocation();
 
-
-
   const [isOpened,setIsOpened]=useState(false)
 
   const onBurgerClick=()=>{

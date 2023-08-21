@@ -105,18 +105,22 @@
   right: 0px;
   bottom: 100px;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1300px) {
   .wrap {
     padding: 48px;
     width: 100%;
   }
+  .hideImage {
+    display:none;
+  }
+}
+@media (max-width: 768px) {
   .container {
     max-width: 672px;
     margin: 0;
   }
-  .hideImage {
-    display:none;
-  }
+
 }
 @media (max-width: 320px) {
   .wrap {

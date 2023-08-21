@@ -45,12 +45,6 @@
   border: 1px solid #5b7cfe;
 }
 
-.smallPrimary:hover {
-  background-color: #ebefff;
-  color: #5b7cfe;
-  border: 1px solid #ebefff;
-}
-
 .smallSecondary {
   color: #5b7cfe;
   border: 1px solid #5b7cfe;
@@ -61,17 +55,12 @@
   line-height: 16px;
 }
 
-.smallSecondary:hover {
-  background: #1d1e2c;
-  color: #fcfcfc;
-  border: 1px solid #1d1e2c;
-}
-
 .disabled {
   color: #adbeff;
   pointer-events: none;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
     .responsiveBtn {
         box-sizing: border-box;
         width: 104px;
