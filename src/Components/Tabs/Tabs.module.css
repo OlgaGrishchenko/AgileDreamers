@@ -31,3 +31,9 @@
    border: 1px solid #FCFCFC;
    
 }
+@media (max-width: 768px) {
+  .container {
+    width: 232px;
+    padding: 24px 35px;
+  }
+}

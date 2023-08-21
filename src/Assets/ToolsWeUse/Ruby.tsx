@@ -7,112 +7,112 @@ export const Ruby = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_2401_20788)">
+      <g clipPath="url(#clip0_2401_20788)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M44.1224 36.9623L12.1499 56.0002L53.5483 53.1832L56.7368 11.3232L44.1224 36.9623Z"
           fill="url(#paint0_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M53.616 53.1545L50.0578 28.5273L40.3657 41.361L53.616 53.1545Z"
           fill="url(#paint1_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M53.6644 53.1546L27.5965 51.1025L12.2886 55.9466L53.6644 53.1546Z"
           fill="url(#paint2_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M12.3252 55.9519L18.8373 34.5586L4.50732 37.6313L12.3252 55.9519Z"
           fill="url(#paint3_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M40.3631 41.4315L34.3711 17.8955L17.2231 34.0141L40.3631 41.4315Z"
           fill="url(#paint4_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M55.3772 18.227L39.1676 4.95117L34.6538 19.5846L55.3772 18.227Z"
           fill="url(#paint5_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M47.7967 0.218318L38.2632 5.50144L32.2485 0.147461L47.7967 0.218318Z"
           fill="url(#paint6_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M0.736816 44.807L4.73056 37.503L1.49995 28.8018L0.736816 44.807Z"
           fill="url(#paint7_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M1.28516 28.5272L4.53555 37.7727L18.6592 34.5951L34.784 19.5677L39.3345 5.07339L32.1692 0L19.9873 4.57172C16.1493 8.15143 8.7017 15.2343 8.43319 15.3675C8.16751 15.5036 3.51521 24.3211 1.28516 28.5272Z"
           fill="white"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M12.6981 11.9177C21.0163 3.64726 31.7397 -1.23906 35.855 2.92452C39.9677 7.0881 35.6063 17.2065 27.2881 25.4742C18.9699 33.7418 8.3793 38.8974 4.26685 34.7338C0.151574 30.5731 4.37991 20.1854 12.6981 11.9177Z"
           fill="url(#paint8_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M12.3252 55.9437L18.7864 34.4824L40.2446 41.3953C32.4861 48.6907 23.857 54.8582 12.3252 55.9437Z"
           fill="url(#paint9_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M34.812 19.5256L40.3207 41.4064C46.8017 34.5729 52.6185 27.2264 55.4673 18.1396L34.812 19.5256Z"
           fill="url(#paint10_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M55.4114 18.2499C57.616 11.578 58.1248 2.0066 47.7289 0.229492L39.1987 4.95426L55.4114 18.2499Z"
           fill="url(#paint11_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M0.736816 44.7112C1.04207 55.7228 8.96455 55.8869 12.3393 55.9835L4.54401 37.7275L0.736816 44.7112Z"
           fill="#9E1209"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M34.8433 19.5594C39.8234 22.6289 49.8604 28.7935 50.0639 28.9069C50.3801 29.0855 54.3911 22.1244 55.3012 18.1904L34.8433 19.5594Z"
           fill="url(#paint12_radial_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M18.7778 34.4824L27.4154 51.1934C32.5227 48.4158 36.5221 45.0317 40.1852 41.4066L18.7778 34.4824Z"
           fill="url(#paint13_radial_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M4.50998 37.7497L3.28613 52.3634C5.59532 55.5264 8.77223 55.8014 12.1046 55.5548C9.69364 49.5376 4.87741 37.506 4.50998 37.7497Z"
           fill="url(#paint14_linear_2401_20788)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M39.1479 4.99073L56.3072 7.40554C55.3914 3.51406 52.5791 1.00287 47.7855 0.217773L39.1479 4.99073Z"
           fill="url(#paint15_linear_2401_20788)"
         />

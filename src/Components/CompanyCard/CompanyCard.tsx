@@ -37,20 +37,21 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
   return (
     <div className={styles.card}>
       <div className={styles.cardInfo}>
+        <div className={classNames(styles.title,styles.hideTitleTablet)}>{companyName}</div>
       <div className={styles.first}>
-        <div><img src={avatar} className={styles.avatar} /></div>
+        <div className={styles.avatar}><img src={avatar} className={styles.avatar} /></div>
         <div className={styles.info}>
           <div>
             <div className={classNames(styles.data, styles.firstInfo)}>
               <div className={styles.data}>{location},</div><div className={styles.data}>{foundationDate}</div>
             </div>
-            <div className={styles.title}>{companyName}</div>
+            <div className={classNames(styles.title,styles.hideTitle)}>{companyName}</div>
           </div>
           <div className={classNames(styles.data, styles.secondInfo)}>
             <div className={styles.containerAnswers}>
               <div className={styles.answers}><PeoplesIcon /> <span>{teamSize}</span></div>
               <div className={styles.answers}><BudgetIcon /> <span>{budget}</span></div>
-              <div className={styles.answers}><ClockIcon /> <span>{averageHourlyRate} per/h</span></div>
+              <div className={styles.answers}><ClockIcon /> <div className={styles.timeBlock}>{averageHourlyRate}<div>per/h</div></div></div>
             </div>
           </div>
         </div>
@@ -68,7 +69,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
         />
 
           <Button
-            className={styles.button}
+            className={classNames(styles.button,styles.blackColor)}
             title={"More info"}
             type={ButtonTypes.SmallSecondary}
             onClick={onMoreClick}

@@ -105,3 +105,47 @@
   right: 0px;
   bottom: 100px;
 }
+@media (max-width: 768px) {
+  .wrap {
+    padding: 48px;
+    width: 100%;
+  }
+  .container {
+    max-width: 672px;
+    margin: 0;
+  }
+  .hideImage {
+    display:none;
+  }
+}
+@media (max-width: 320px) {
+  .wrap {
+    max-width: 288px;
+    padding: 40px 16px ;
+  }
+  .container {
+    max-width: 288px;
+  }
+  .hideLogo {
+    display:none;
+  }
+  .title {
+    max-width: 288px;
+    font-size: 39px;
+    line-height: 40px;
+  }
+  .subTitle {
+    max-width: 288px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: left;
+  }
+  .containerTop {
+    margin-bottom: 24px;
+  }
+  .containerBottom {
+   flex-direction: column;
+  }
+}

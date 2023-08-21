@@ -1,13 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import { Search } from "../../Assets/SearchLine/Search";
 import Input from "../Input";
 import { InputTypes } from "../Input/Input";
 import { CheckPicker } from "rsuite";
 import "./rsuite.css";
 import styles from "./SearchLine.module.css";
+import classNames from "classnames";
+import {FilterBurger} from "../../Assets/SearchLine/FilterBurger";
+import {FilterBurgerActiveIcon} from "../../Assets/SearchLine/FilterBurgerActiveIcon";
+import FilterMobile from "./FilterMobile";
 
 
-const byIndustry = [
+export const byIndustry = [
   "AI and Machine Learning",
   "Augmented Reality",
   "Blockchain",
@@ -42,7 +46,7 @@ const byIndustry = [
   "Webinar software"
 ].map((item) => ({ label: item, value: item }));
 
-const byStackCode = [
+export const byStackCode = [
   ".NET3",
   ".Net Core",
   "Adobe After Effect",
@@ -143,7 +147,7 @@ const byStackCode = [
   "Zend",
 ].map((item) => ({ label: item, value: item }));
 
-const byServiceCategory = [
+export const byServiceCategory = [
   "Customizer",
   "Ecosystem provider",
   "Outsourcing software development",
@@ -154,6 +158,12 @@ const byServiceCategory = [
 ].map((item) => ({ label: item, value: item }));
 
 const SearchLine = () => {
+  const [isOpenedFilter,setIsOpenedFilter]=useState(false)
+
+  const onFilterClick = () => {
+    setIsOpenedFilter(!isOpenedFilter)
+  }
+
   return (
     <div className={styles.wrap}>
       <div className={styles.container}>
@@ -163,35 +173,43 @@ const SearchLine = () => {
             onChange={() => {}}
             placeholder={"Search"}
             type={InputTypes.SearchType}
+            className={classNames(styles.tabletInput,styles.mobileInput)}
           />
           <div className={styles.searchIcon} onClick={() => {}}>
             <Search />
           </div>
         </div>
-        <CheckPicker
-          data={byIndustry}
-          searchable={false}
-          className={styles.checkPicker}
-          placeholder={"By Industry"}
-          menuClassName={styles.dropdownMenu}
-        />
+        <div className={classNames(styles.filtersBurger,{[styles.blueColor]:isOpenedFilter})} onClick={onFilterClick}>
+          {isOpenedFilter ? <FilterBurgerActiveIcon/> : <FilterBurger/>}
+        </div>
 
-        <CheckPicker
-          data={byStackCode}
-          searchable={false}
-          className={styles.checkPicker}
-          placeholder={"By Stack/Code"}
-          menuClassName={styles.dropdownMenu}
-        />
+        <div className={classNames(styles.filterContainer,styles.hideFilters)}>
+          <CheckPicker
+              data={byIndustry}
+              searchable={false}
+              className={styles.checkPicker}
+              placeholder={"By Industry"}
+              menuClassName={styles.dropdownMenu}
+          />
 
-        <CheckPicker
-          data={byServiceCategory}
-          searchable={false}
-          className={styles.checkPicker}
-          placeholder={"By Service Category"}
-          menuClassName={styles.dropdownMenu}
-        />
+          <CheckPicker
+              data={byStackCode}
+              searchable={false}
+              className={styles.checkPicker}
+              placeholder={"By Stack/Code"}
+              menuClassName={styles.dropdownMenu}
+          />
+
+          <CheckPicker
+              data={byServiceCategory}
+              searchable={false}
+              className={styles.checkPicker}
+              placeholder={"By Service Category"}
+              menuClassName={styles.dropdownMenu}
+          />
+        </div>
       </div>
+      <FilterMobile opened={isOpenedFilter}/>
     </div>
   );
 };

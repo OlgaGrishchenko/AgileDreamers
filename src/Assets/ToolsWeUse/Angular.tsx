@@ -7,7 +7,7 @@ export const Angular = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_2470_2216)">
+      <g clipPath="url(#clip0_2470_2216)">
         <path
           d="M0.0424805 9.37221L25.9442 0.143555L52.5433 9.20815L48.2366 43.4772L25.9442 55.8231L4.00055 43.6413L0.0424805 9.37221Z"
           fill="#E23237"
