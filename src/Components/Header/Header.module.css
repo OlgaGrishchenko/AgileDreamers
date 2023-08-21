@@ -60,11 +60,6 @@
 
 @media (max-width: 768px) {
 
-  .wrap {
-    padding: 10px 48px;
-    width: 100%;
-  }
-
   .container {
     max-width: 672px;
   }

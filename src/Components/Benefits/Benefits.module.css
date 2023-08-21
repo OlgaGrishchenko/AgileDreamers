@@ -101,13 +101,9 @@
 }
 
 @media (max-width: 768px) {
-  .wrap {
-    padding: 0 48px;
-  }
   .container {
     max-width: 672px;
     gap: 32px;
-    margin: 0;
   }
   .containerBenefits {
     width: 100%;

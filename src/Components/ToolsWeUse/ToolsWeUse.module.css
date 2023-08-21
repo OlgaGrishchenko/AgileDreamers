@@ -46,11 +46,9 @@
 
 
 @media (max-width: 768px) {
-  .wrap {
-    padding: 0 48px;
-  }
   .container {
     gap: 32px;
+    max-width: 672px;
   }
   .icons svg {
     width:32px;
