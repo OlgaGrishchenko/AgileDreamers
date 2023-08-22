@@ -61,7 +61,7 @@
 }
 
 .button {
-  width: 168px;
+  width: 200px;
 }
 
 .containerPlatforms {
@@ -101,8 +101,6 @@
   opacity: 0.9;
 }
 
-
-
 .stepsGroup {
   display: flex;
   flex-direction: column;
@@ -127,4 +125,105 @@
   left: 0;
   top: -8px;
   z-index: -1;
+}
+
+@media (max-width: 1330px) {
+  .headlineImage svg {
+    width: 500px;
+  }
+
+  .headlineImage {
+    top: 50px;
+  }
+
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+  .hideImage {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 860px) {
+  .darkBlock {
+    padding: 56px 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    gap: 56px;
+  }
+  .container {
+    max-width: 672px;
+  }
+  .headlineTitle .headlineText {
+    width: 672px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .darkBlock {
+    padding: 56px 48px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .darkBlock {
+    padding: 40px 16px;
+  }
+
+  .container {
+    max-width: 400px;
+  }
+  .headline {
+    gap: 24px;
+  }
+
+  .headlineTitle {
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  .headlineText {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 288px;
+  }
+
+  .button {
+    width: 208px;
+  }
 }

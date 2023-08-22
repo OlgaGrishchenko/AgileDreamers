@@ -4,6 +4,7 @@ import Button, { ButtonTypes } from "../../Components/Button";
 import { StepsEllipse } from "../../Assets/StartUpsPage/StepsEllipse";
 
 import styles from "./DevelopersPage.module.css";
+import classNames from "classnames";
 
 const DevelopersPage = () => {
   return (
@@ -32,7 +33,7 @@ const DevelopersPage = () => {
                 onClick={() => {}}
               />
             </div>
-            <div className={styles.headlineImage}>
+            <div className={classNames(styles.headlineImage,styles.hideImage)}>
               <HeadlineImageDevelopers />
             </div>
           </div>

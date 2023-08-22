@@ -11213,7 +11213,7 @@ textarea.rs-picker-search-input {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100%;
+  width: 90%;
 }
 .rs-picker-cleanable.rs-picker-has-value .rs-picker-toggle {
   padding-right: 44px;
@@ -16495,6 +16495,8 @@ textarea.rs-picker-menu .rs-picker-search-bar .rs-picker-search-bar-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 90%;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=index.css.map */
@@ -16504,7 +16506,7 @@ textarea.rs-picker-menu .rs-picker-search-bar .rs-picker-search-bar-input {
   border: transparent;
   background-color: rgba(29, 30, 44, 0.04) !important;
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
   padding-left: 20px;
   box-sizing: border-box;

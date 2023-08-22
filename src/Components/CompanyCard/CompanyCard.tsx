@@ -32,6 +32,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
   const navigate = useNavigate();
   const onMoreClick = () => {
     navigate(PathNames.CompanyPage);
+  
   };
 
   return (
@@ -80,20 +81,3 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
 };
 
 export default CompanyCard;
-/*
-        
-        <Button
-          className={styles.button}
-          title={"Chat"}
-          type={ButtonTypes.SmallSecondary}
-          onClick={() => {}}
-        />
-
-          <Button
-            className={styles.button}
-            title={"More info"}
-            type={ButtonTypes.SmallSecondary}
-            onClick={onMoreClick}
-          />
- 
-      </div>*/

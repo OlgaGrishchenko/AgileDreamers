@@ -64,13 +64,10 @@
   }
 }
 
-
 @media (max-width: 1200px) {
-
   .container {
     max-width: 900px;
   }
-
   .containerSidebar {
     gap:16px;
   }
@@ -81,11 +78,9 @@
     letter-spacing: 0;
     text-align: center;
   }
-
   .containerButtons {
     gap:8px;
   }
-
   .containerLogo {
     width:45px;
     height: 40px;
@@ -103,11 +98,9 @@
 }
 
 @media (max-width: 768px) {
-
   .container {
     max-width: 672px;
   }
-
   .categories {
     font-size: 12px;
     font-weight: 500;
@@ -116,15 +109,12 @@
     text-align: center;
   }
 }
+
 @media (max-width: 700px) {
-  .wrap {
-    padding: 8px 0px;
-  }
   .container {
-    padding: 0 16px 0 16px;
-    margin: 0;
-    max-width: 288px;
-    gap:44px;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 16px;
   }
   .hideSidebar,.hideBtn {
     display: none;

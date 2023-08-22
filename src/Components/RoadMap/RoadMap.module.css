@@ -39,6 +39,10 @@
   flex-direction: column;
   gap: 16px;
   width: 592px;
+  padding-left:0;
+  margin:0;
+  list-style: initial;
+
 }
 
 .description {
@@ -50,6 +54,11 @@
   line-height: 32px;
   list-style: inside;
  /*padding-left: 1em;*/
+}
+
+.description::before {
+  content: '';
+  margin-left: -10px;
 }
 
 .vertical-timeline-element-content {
@@ -81,16 +90,4 @@ width: max-content;
   margin-left: -26px;
 }
 
-ul {
-  padding-left:0;
-  margin:0;
-  list-style-position: inside;
-}
-li::before {
-  content: '';
-  margin-left: -18px;
-}
 
-.li:before {
-  margin-left: 0;
-}

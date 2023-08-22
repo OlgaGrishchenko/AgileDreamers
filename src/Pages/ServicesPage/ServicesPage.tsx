@@ -84,21 +84,21 @@ const ServicesPage = () => {
               </div>
               <div className={styles.cardList}>
                 <div className={styles.cardListTitle}>Strong Expertise in</div>
-                <div className={styles.list}>
+                <ul className={styles.list}>
                   {StrongExpertise.map(({ name }) => {
                     return <li className={styles.li}> {name} </li>;
                   })}
-                </div>
+                </ul>
               </div>
             </div>
             <div className={styles.containerList}>
               <div className={styles.cardList}>
               <div className={styles.cardListTitle}>Saas Solutions</div>
-                <div className={styles.list}>
+                <ul className={styles.list}>
                   {SaasSolutions.map(({ name }) => {
                     return <li className={styles.li}> {name} </li>;
                   })}
-                </div>
+                </ul>
               </div>
               <div className={styles.listImage}>
                 <ImageBottom />
