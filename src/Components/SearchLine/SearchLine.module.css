@@ -107,10 +107,7 @@
   .wrap {
     max-width: 100%;
     margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
+
   }
   .hideFilters {
     display: none;
@@ -122,7 +119,6 @@
     max-width: 500px;
     flex-direction: row;
     gap: 8px;
-    margin: 0;
   }
   .filtersBurger {
     width: 48px;
@@ -136,5 +132,8 @@
   }
   .blueColor {
     background: #5b7cfe;
+  }
+  .searchContainer {
+    width:100%;
   }
 }
