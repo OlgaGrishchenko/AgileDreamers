@@ -7,7 +7,7 @@
   margin: 0 auto;
   max-width: 1216px;
   display: flex;
-  gap:20px;
+  gap: 20px;
   opacity: 0;
   transform: translateY(22%);
   animation: ani 1.5s forwards;
@@ -66,18 +66,16 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .wrap {
-    max-width: 672px;
+    max-width: 100%;
     margin-bottom: 32px;
     margin-top: 56px;
-    padding: 0 48px;
   }
   .container {
-    max-width: 672px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
-    margin: 0;
     gap: 16px;
   }
   .filterContainer {
@@ -93,31 +91,43 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1000px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 672px;
+  }
+}
+
+@media (max-width: 700px) {
   .wrap {
-    max-width: 288px;
-    margin-bottom: 32px;
+    max-width: 100%;
     margin-top: 40px;
-    padding: 0 16px 16px 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    align-items: center;
   }
   .hideFilters {
     display: none;
   }
   .mobileInput {
-    max-width: 232px;
+    max-width: 100%;
   }
   .container {
-    max-width: 288px;
+    max-width: 500px;
     flex-direction: row;
     gap: 8px;
+    margin: 0;
   }
   .filtersBurger {
     width: 48px;
     height: 48px;
-    border-radius: 50%;
+    border-radius: 1000px;
     background: #1d1e2c0a;
     display: flex;
     justify-content: center;

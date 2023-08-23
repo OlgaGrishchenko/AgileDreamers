@@ -21,9 +21,9 @@ const ServicesPage = () => {
 
   const SaasSolutions = [
     { name: "Project Management Software" },
-    { name: "Customer Relationship Management (CRM)" },
+    { name: "Customer Relationship Management (CRM)", width: true},
     { name: "Enterprise Resource Planning (ERP)" },
-    { name: "Content Management System (CMS) " },
+    { name: "Content Management System (CMS)" },
     { name: "Sales CRM" },
     { name: "Marketing analytics" },
     { name: "BI SaaS" },
@@ -95,8 +95,8 @@ const ServicesPage = () => {
               <div className={styles.cardList}>
               <div className={styles.cardListTitle}>Saas Solutions</div>
                 <ul className={styles.list}>
-                  {SaasSolutions.map(({ name }) => {
-                    return <li className={styles.li}> {name} </li>;
+                  {SaasSolutions.map(({ name, width }) => {
+                    return <li className={classNames(styles.li, {[styles.smallLi]: width}) }> {name} </li>;
                   })}
                 </ul>
               </div>
