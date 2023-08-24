@@ -217,7 +217,6 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-  align-items: space-between;
 }
 
 .stepsGroup {
@@ -358,4 +357,95 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.laptop {
+  display: none;
+}
+
+@media (max-width: 1330px) {
+  .container {
+    max-width: 87vw;
+  }
+  .stages {
+    gap:10px;
+  }
+  .futuresCards {
+    gap:10px;
+  }
+}
+@media (max-width: 1120px) {
+  .headline {
+    padding: 56px 0;
+  }
+  .hideBlock {
+    display:none
+  }
+  .laptop {
+    display: flex;
+    max-width: 100%;
+    gap:24px;
+  }
+  .teamTitle {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #1D1E2C;
+  }
+  .teamStructure {
+    gap:8px;
+  }
+  .area {
+    width: auto;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    padding:8px 40px;
+    box-sizing: border-box;
+    color: #1D1E2C;
+    display: flex;
+  }
+  .bigSize {
+    width:auto;
+    box-sizing: border-box;
+  }
+  .teamDescription {
+    color: #1D1E2C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    max-width: 100%;
+  }
+  .whiteBlock {
+    gap: 96px;
+  }
+  .stages {
+    flex-direction: column;
+    gap:32px;
+    margin-bottom: 16px;
+  }
+  .rightSideBlock {
+    align-self: flex-end;
+  }
+  .stepsComment {
+    padding: 0 23px;
+    max-width: 100%;
+    display:flex;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .containerFutures {
+    gap: 32px;
+  }
+  .futuresCards {
+    display: flex;
+    flex-direction: column;
+    gap:44px;
+  }
 }
