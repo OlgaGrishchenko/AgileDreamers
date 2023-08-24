@@ -68,6 +68,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
+  width: 87vw;
 }
 
 .platforms {
@@ -75,7 +76,6 @@
   flex-direction: column;
   gap: 16px;
   text-align: start;
-  width: 1216px;
 }
 
 .platformsTitle {
@@ -135,17 +135,12 @@
   .headlineImage {
     top: 50px;
   }
-
   .container {
-    max-width: 1100px;
+    max-width: 87vw;
   }
 }
 
 @media (max-width: 1200px) {
-  .container {
-    max-width: 900px;
-
-  }
   .hideImage {
     display: none;
   }
@@ -154,24 +149,21 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
 @media (max-width: 860px) {
   .darkBlock {
     padding: 56px 0px;
+  }
+  .platformsSubtitle {
+    max-width: 584px;
+  }
+  .stepsGroup {
+    gap: 43px;
   }
 }
 
 @media (max-width: 768px) {
   .wrap {
     gap: 56px;
-  }
-  .container {
-    max-width: 672px;
   }
   .headlineTitle .headlineText {
     width: 672px;
@@ -183,9 +175,6 @@
     padding: 40px 16px;
   }
 
-  .container {
-    max-width: 500px;
-  }
   .headlineTitle {
     font-size: 39px;
     font-weight: 500;
@@ -202,22 +191,33 @@
   .button {
     width: 208px;
   }
+
+  .containerPlatforms {
+    gap: 32px;
+  }
+
+  .platforms {
+    gap: 8px;
+  }
+
+  .platformsTitle {
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+  }
+
+  .platformsSubtitle .step {
+    font-size: 16px;
+    letter-spacing: 0.08px;
+  }
+
+  .stepsGroup {
+    gap: 32px;
+  }
 }
 
 @media (max-width: 500px) {
-  .container {
-    max-width: 400px;
-  }
   .headline {
     gap: 24px;
   }
-}
-
-
-@media (max-width: 400px) {
-  .container {
-    max-width: 288px;
-  }
-
-
 }

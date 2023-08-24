@@ -137,3 +137,17 @@
     width:100%;
   }
 }
+
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 288px;
+  }
+}
