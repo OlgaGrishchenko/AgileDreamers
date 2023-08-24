@@ -2,19 +2,20 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
+  width: 100vw;
 }
 
 .darkBlock {
   background: #1d1e2c;
   display: flex;
-  padding: 72px;
+  padding: 72px 0;
   position: relative;
+  box-sizing: border-box;
 }
 
 .whiteBlock {
   display: flex;
   flex-direction: column;
-  padding-top: 64px;
 }
 
 .container {
@@ -111,7 +112,7 @@
   line-height: 32px;
 }
 
-.list{
+.list {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -120,18 +121,133 @@
 }
 
 .li {
-  color: #1D1E2C;
-font-family: Karla;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.1px;
+  color: #1d1e2c;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1px;
 }
 
-.li:before{
-  Margin-left:0}
+.li:before {
+  margin-left: 0;
+}
+
+.smallLi {
+  width: 251px;
+}
+
+@media (max-width: 1360px) {
+  .headlineImage svg {
+    width: 600px;
+  }
+  .container {
+    max-width: 87vw;
+  }
+
+  .headline {
+    width: 87vw;
+  }
+  .headlineImage {
+    top: 50px;
+  }
+  .containerLists {
+    width: 87vw;
+  }
+  .listImage svg {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .headlineImage svg {
+    width: 500px;
+  }
+  .headlineImage {
+    top: 30px;
+  }
+  .listImage svg {
+    width: 350px;
+  }
+  .containerLists {
+    gap: 40px;
+    width: 87vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hideImage,
+  .hideListImage {
+    display: none;
+  }
+
+  .bottomContainerList {
+    justify-content: end;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    gap: 56px;
+  }
+  .darkBlock {
+    padding: 56px 0;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
   .smallLi {
-    width: 251px;
+    width: 220px;
   }
+}
+
+@media (max-width: 400px) {
+  .bottomContainerList,
+  .topContainerList {
+    justify-content: center;
+  }
+
+  .wrap {
+    gap: 40px;
+  }
+
+  .darkBlock {
+    padding: 40px 0;
+  }
+
+  .headlineTitle {
+    font-size: 39px;
+    line-height: 40px;
+  }
+
+  .subTitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+    letter-spacing: 0.08px;
+    opacity: 0.9;
+  }
+
+  .cardList {
+    width: 288px;
+    padding: 24px;
+  }
+
+  .cardListTitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .li {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

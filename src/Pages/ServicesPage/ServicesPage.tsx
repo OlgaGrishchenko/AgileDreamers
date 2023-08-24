@@ -69,7 +69,7 @@ const ServicesPage = () => {
                 Strategic and affiliate marketing
               </div>
             </div>
-            <div className={styles.headlineImage}>
+            <div className={classNames(styles.headlineImage,styles.hideImage)}>
               <HeadlineImage />
             </div>
           </div>
@@ -78,11 +78,11 @@ const ServicesPage = () => {
       <div className={styles.whiteBlock}>
         <div className={styles.container}>
           <div className={styles.containerLists}>
-            <div className={styles.containerList}>
-              <div className={styles.listImage}>
+            <div className={classNames(styles.containerList,styles.topContainerList)}>
+              <div className={classNames(styles.listImage,styles.hideListImage)}>
                 <ImageTop />
               </div>
-              <div className={styles.cardList}>
+              <div className={classNames(styles.cardList,styles.topCardList)}>
                 <div className={styles.cardListTitle}>Strong Expertise in</div>
                 <ul className={styles.list}>
                   {StrongExpertise.map(({ name }) => {
@@ -91,7 +91,7 @@ const ServicesPage = () => {
                 </ul>
               </div>
             </div>
-            <div className={styles.containerList}>
+            <div className={classNames(styles.containerList,styles.bottomContainerList)}>
               <div className={styles.cardList}>
               <div className={styles.cardListTitle}>Saas Solutions</div>
                 <ul className={styles.list}>
@@ -100,7 +100,7 @@ const ServicesPage = () => {
                   })}
                 </ul>
               </div>
-              <div className={styles.listImage}>
+              <div className={classNames(styles.listImage,styles.hideListImage)}>
                 <ImageBottom />
               </div>
             </div>
