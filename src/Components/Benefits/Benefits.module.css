@@ -102,26 +102,24 @@
 
 @media (max-width: 1330px) {
   .container {
-    max-width: 1100px;
+    max-width: 90vw;
   }
-
   .containerBenefits {
     gap: 16px;
-}
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   .container {
-    max-width: 672px;
     gap: 32px;
+    justify-content: center;
   }
   .containerBenefits {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    margin: 0;
-    gap: 10px;
+    justify-content: center;
   }
   .containerBenefit {
     width: 320px;
@@ -140,10 +138,10 @@
 }
 @media (max-width: 320px) {
   .container {
-    max-width: 288px;
     gap: 24px;
-    margin: 0;
-    padding: 0 16px 0 16px;
+  }
+
+  .containerBenefits {
     align-items: center;
   }
 }

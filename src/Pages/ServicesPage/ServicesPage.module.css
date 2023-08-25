@@ -143,17 +143,17 @@
     width: 600px;
   }
   .container {
-    max-width: 87vw;
+    max-width: 90vw;
   }
 
   .headline {
-    width: 87vw;
+    width: 90vw;
   }
   .headlineImage {
     top: 50px;
   }
   .containerLists {
-    width: 87vw;
+    width: 90vw;
   }
   .listImage svg {
     width: 500px;
@@ -172,7 +172,7 @@
   }
   .containerLists {
     gap: 40px;
-    width: 87vw;
+    width: 90vw;
   }
 }
 

@@ -10,11 +10,33 @@
   padding-bottom: 72px;
 }
 
-
 .vidget {
   position: absolute;
-
   width: 320px;
   bottom: 200px;
   z-index: 30;
+}
+
+@media (max-width: 1330px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-bottom: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding-bottom: 56px;
+  }
+
+  .vidget {
+    width: 280px;
+  }
 }

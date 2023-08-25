@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React from "react";
 import { ProvidersImgHeadline } from "../../Assets/ProvidersPage/ProvidersImgHeadline";
 import CompanyCardList from "../../Components/CompanyCardList";
@@ -44,7 +45,7 @@ const ProvidersPage = () => {
               </ul>
             </div>
 
-            <div className={styles.headlineImage}>
+            <div className={classNames(styles.headlineImage,styles.hideImage)}>
               <ProvidersImgHeadline />
             </div>
           </div>

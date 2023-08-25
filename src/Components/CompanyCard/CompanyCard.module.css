@@ -12,7 +12,6 @@
 }
 
 .cardInfo {
-  
 }
 
 .first {
@@ -86,7 +85,6 @@
 .third {
   display: flex;
   justify-content: space-between;
-
 }
 
 .button {
@@ -98,8 +96,8 @@
   display: none;
 }
 .timeBlock {
-  display:flex;
-  gap:4px;
+  display: flex;
+  gap: 4px;
 }
 
 @media (max-width: 768px) {
@@ -110,13 +108,13 @@
 
   .first {
     padding-top: 16px;
-    padding-bottom:16px;
+    padding-bottom: 16px;
     align-items: center;
-    gap:24px;
+    gap: 24px;
     margin-bottom: 16px;
   }
   .info {
-    gap:12px;
+    gap: 12px;
     padding-top: 6px;
     padding-bottom: 6px;
   }
@@ -131,7 +129,6 @@
     line-height: 16px;
     letter-spacing: 0;
     text-align: left;
-
   }
   .hideTitle {
     display: none;
@@ -142,46 +139,45 @@
     line-height: 24px;
     letter-spacing: 0;
     text-align: center;
-    padding-bottom:16px ;
-    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e8e8e8;
   }
-.third {
-  flex-direction: column;
-  gap:8px ;
-  width: 100%;
-}
-.button {
-  box-sizing: border-box;
-  width:272px;
-  height: 32px;
-}
-.blackColor {
-  color:#1D1E2C;
-}
+  .third {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .button {
+    box-sizing: border-box;
+    width: 272px;
+    height: 32px;
+  }
+  .blackColor {
+    color: #1d1e2c;
+  }
   .hideTitleTablet {
     display: block;
   }
-
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .card {
     width: 288px;
     height: 416px;
   }
   .title {
     font-size: 14px;
-    padding-bottom:12px ;
+    padding-bottom: 12px;
   }
   .first {
     width: 100%;
     padding-top: 12px;
-    padding-bottom:16px;
+    padding-bottom: 16px;
     align-items: center;
-    gap:16px;
+    gap: 16px;
     margin-bottom: 16px;
   }
   .info {
-    gap:8px;
+    gap: 8px;
     padding-top: 4px;
     padding-bottom: 4px;
   }
@@ -190,10 +186,10 @@
     height: 48px;
   }
   .button {
-    width:240px;
+    width: 240px;
   }
   .timeBlock {
-    display:flex;
-    gap:4px
+    display: flex;
+    gap: 4px;
   }
 }

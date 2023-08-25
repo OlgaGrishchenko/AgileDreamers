@@ -364,7 +364,7 @@
 
 @media (max-width: 1330px) {
   .container {
-    max-width: 87vw;
+    max-width: 90vw;
   }
   .stages {
     gap:10px;

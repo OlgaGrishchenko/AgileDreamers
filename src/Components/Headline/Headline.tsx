@@ -17,7 +17,7 @@ const Headline = () => {
         <Line />
       </div>
       <div className={styles.container}>
-        <div className={classNames(styles.ukraine,styles.hideLogo)}>
+        <div className={classNames(styles.ukraine,styles.hideUkraine)}>
           <Ukraine />
         </div>
 

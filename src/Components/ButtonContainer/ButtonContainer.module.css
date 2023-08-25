@@ -17,10 +17,10 @@
     width: 155px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 600px) {
     .buttons {
         gap: 12px;
-        max-width: 288px;
+        max-width: fit-content;
     }
     .topButtonContainer {
         display: flex;

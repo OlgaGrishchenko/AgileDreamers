@@ -50,12 +50,56 @@
   gap: 8px;
   padding-left: 20px;
 }
-@media (max-width: 768px) {
-  .darkBlock {
-    padding: 48px;
+
+@media (max-width: 1330px) {
+  .headlineImage svg {
+    width: 500px;
+  }
+
+  .headlineImage {
+    top: 50px;
+  }
+  .container {
+    max-width: 90vw;
   }
 }
 
-.smallLi {
-  max-width: 461px;
+@media (max-width: 1100px) {
+  .hideImage {
+    display: none;
+  }
+  .darkBlock {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .darkBlock {
+    padding: 48px 0;
+  }
+  .headlineDesc {
+    max-width: 100%;
+  }
+  .headlineText {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .darkBlock {
+    padding: 16px 0;
+  }
+
+  .headlineTitle {
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  .headlineText {
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+  }
 }

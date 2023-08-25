@@ -107,38 +107,57 @@
 }
 
 @media (max-width: 1330px) {
-  .hideImage {
-    display: none;
+  .image svg {
+    width: 300px;
   }
 
+  .line svg {
+    width: 500px;
+  }
   .container {
-    max-width: 1100px;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 1130px) {
+  .hideImage svg {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .container {
+  .wrap {
+    padding: 48px 0;
+  }
+
+  .containerTop {
+    margin-bottom: 52px;
+  }
+
+  .title {
+    max-width: 672px;
+  }
+
+  .subTitle {
     max-width: 672px;
   }
 }
-@media (max-width: 320px) {
-  .wrap {
-    max-width: 288px;
-    padding: 40px 16px;
-  }
-  .container {
-    max-width: 288px;
-  }
-  .hideLogo {
+
+@media (max-width: 700px) {
+  .hideUkraine {
     display: none;
   }
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    padding: 40px 0;
+  }
   .title {
-    max-width: 288px;
     font-size: 39px;
     line-height: 40px;
   }
   .subTitle {
-    max-width: 288px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
