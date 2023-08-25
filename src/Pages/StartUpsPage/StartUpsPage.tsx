@@ -58,7 +58,7 @@ const StartUpsPage = () => {
               </div>
             </div>
 
-            <div className={styles.fullTeam}>
+            <div className={classNames(styles.fullTeam,styles.hideBlock)}>
               <div className={styles.team}>
                 <div className={styles.teamTitle}>
                   Full team adopted to the existing needs may consist from
@@ -89,6 +89,31 @@ const StartUpsPage = () => {
 
       <div className={styles.container}>
         <div className={styles.whiteBlock}>
+          <div className={classNames(styles.fullTeam,styles.laptop)}>
+            <div className={styles.team}>
+              <div className={styles.teamTitle}>
+                Full team adopted to the existing needs may consist from
+              </div>
+              <div className={styles.teamStructure}>
+                {Team.map(({ name, size }) => {
+                  return (
+                      <span
+                          className={classNames(styles.area, {
+                            [styles.bigSize]: size,
+                          })}
+                      >
+                        {name}
+                      </span>
+                  );
+                })}
+              </div>
+            </div>
+            <div className={styles.teamDescription}>
+              Excellent solution for creating a complex Digital Product.
+              We go one step further and offer the ambition that sets us apart
+              from other offers on the market.
+            </div>
+          </div>
           <div className={styles.stages}>
             <div className={styles.stage}>
               <div className={styles.stageTitle}>MVP STAGE</div>
@@ -101,7 +126,7 @@ const StartUpsPage = () => {
                 <Line />
               </div>
             </div>
-            <div className={styles.stage}>
+            <div className={classNames(styles.stage,styles.rightSideBlock)}>
               <div className={styles.stageTitle}>AFTER-LAUNCHED STAGE</div>
               <div className={styles.stageDesk}>
                 A startup will have a right to receive a full team or a picked
@@ -155,7 +180,7 @@ const StartUpsPage = () => {
               </div>
               <div className={styles.stepsComment}>
                 If you don’t have specifications — don’t worry, our product
-                manager will help you prepare before getting any development
+                manager will help you prepare before getting any development.
               </div>
             </div>
           </div>
@@ -181,7 +206,7 @@ const StartUpsPage = () => {
                 </div>
               </div>
 
-              <div className={classNames(styles.card, styles.whiteCard)}>
+              <div className={classNames(styles.card, styles.whiteCard,styles.rightSideBlock)}>
                 <div className={styles.futureTwo}>
                   <FutureTwo />
                 </div>
