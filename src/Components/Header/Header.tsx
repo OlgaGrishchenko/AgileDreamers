@@ -9,6 +9,9 @@ import Ukraine from "../Ukraine";
 import {BurgerIcon} from "../../Assets/Header/BurgerIcon";
 import {CloseBurgerIcon} from "../../Assets/Header/CloseBurgerIcon";
 import MenuMobile from "./MenuMobile/MenuMobile";
+import {useDispatch, useSelector} from "react-redux";
+import {isMobileVisible} from "../../Redux/Reducers/authReducer";
+import authSelector from "../../Redux/Selectors/authSelector";
 
 export const CATEGORIES = [
     { name: "Providers", link: "/providers" },
@@ -19,18 +22,16 @@ export const CATEGORIES = [
 ];
 
 const Header = () => {
-  const { pathname } = useLocation();
-
-  const [isOpened,setIsOpened]=useState(false)
-
-  const onBurgerClick=()=>{
-    setIsOpened(!isOpened)
+    const { pathname } = useLocation();
+    const [isOpened,setIsOpened]=useState(false)
+    const onBurgerClick=()=>{
+        setIsOpened(!isOpened)
   }
 
 
   return (
     <div className={classNames(styles.wrap,{[styles.openMenu]:isOpened})}>
-        <MenuMobile isOpened={isOpened} pathname={pathname}/>
+        {isOpened && <MenuMobile onClose={onBurgerClick} pathname={pathname}/>}
       <div className={styles.container}>
         <div className={styles.containerLogo}>
         <NavLink to={PathNames.Home}> <LogoIconHeader /> </NavLink>

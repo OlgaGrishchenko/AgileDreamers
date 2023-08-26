@@ -2,6 +2,8 @@ import React from "react";
 import Router from "./Pages/Router";
 import "./App.css";
 import {Helmet, HelmetProvider,} from "react-helmet-async";
+import {Provider} from "react-redux";
+import { store } from './Redux/store';
 
 
 function App() {
@@ -35,4 +37,12 @@ function App() {
   );
 }
 
-export default App;
+const AppWithStore = () => {
+  return (
+        <Provider store={store}>
+          <App />
+        </Provider>
+  );
+};
+
+export default AppWithStore;

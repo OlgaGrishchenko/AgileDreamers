@@ -1,5 +1,6 @@
 .filterContainer {
-    display: flex;
+    display: none;
+    margin-top: 16px;
     flex-direction: column;
     gap:12px;
 }
@@ -18,4 +19,9 @@
     line-height: 24px;
     letter-spacing: 0;
     color: #1d1e2c;
+}
+@media (max-width: 700px){
+    .filterContainer {
+        display: flex;
+    }
 }

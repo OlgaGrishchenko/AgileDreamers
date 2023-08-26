@@ -12,6 +12,8 @@ import { FutureOne } from "../../Assets/StartUpsPage/Future/FutureOne";
 import { FutureTwo } from "../../Assets/StartUpsPage/Future/FutureTwo";
 import { FutureThree } from "../../Assets/StartUpsPage/Future/FutureThree";
 import { FutureTwoLine } from "../../Assets/StartUpsPage/Future/FutureTwoLine";
+import {FutureTwoMobile} from "../../Assets/StartUpsPage/Future/FutureTwoMobile";
+import {FutureThreeMobile} from "../../Assets/StartUpsPage/Future/FutureThreeMobile";
 
 const StartUpsPage = () => {
   const Team = [
@@ -213,6 +215,9 @@ const StartUpsPage = () => {
                 <div className={styles.futureTwoLine}>
                   <FutureTwoLine />
                 </div>
+                <div className={styles.futureTwoLineMobile}>
+                  <FutureTwoMobile />
+                </div>
                 <div className={styles.futureTwoText}>
                   <div className={classNames(styles.futureDesc, styles.futureDescDark)}>
                   We help juniors developers to gain team development and
@@ -230,6 +235,9 @@ const StartUpsPage = () => {
               <div className={styles.card}>
                 <div className={styles.futureThree}>
                   <FutureThree />
+                </div>
+                <div className={styles.futureThreeMobile}>
+                  <FutureThreeMobile />
                 </div>
                 <div className={styles.futureThreeText}>
                 <div className={styles.futureTitle}>

@@ -361,6 +361,12 @@
 .laptop {
   display: none;
 }
+.futureTwoLineMobile {
+ display: none;
+}
+.futureThreeMobile {
+  display:none;
+}
 
 @media (max-width: 1330px) {
   .container {
@@ -447,5 +453,158 @@
     display: flex;
     flex-direction: column;
     gap:44px;
+  }
+}
+@media (max-width:700px ) {
+  .title {
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: left;
+  }
+  .about {
+    gap: 24px;
+  }
+  .headline {
+    padding: 40px 0;
+  }
+  .wrap {
+    gap: 40px;
+  }
+  .whiteBlock {
+    gap: 64px;
+    text-align: center;
+  }
+  .stage {
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 rgba(175, 175, 175, 0.25);
+    width: 288px;
+    height: auto;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+  .containerTitle {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    width: auto;
+  }
+  .step {
+    max-width: 776px;
+    color: #1d1e2c;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    padding-left: 22px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .stepsComment {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    padding:0;
+    margin-bottom: 0;
+  }
+  .stepsGroup {
+    gap: 24px;
+  }
+  .containerStepsGroup {
+    gap: 24px;
+  }
+  .containerFutures {
+    gap: 24px;
+    align-items: center;
+  }
+  .card {
+    width: 288px;
+    height: 456px;
+    border-radius: 20px;
+    padding: 24px 16px;
+    box-sizing: border-box;
+  }
+  .futureOne {
+    bottom: 32px;
+  }
+  .futureOne svg{
+    width: 56px;
+    height: 56px;
+  }
+  .futureTwo{
+    position: absolute;
+    left: 16px;
+    top: 370px;
+  }
+  .futureTwoLine {
+    display: none;
+  }
+  .futureTwoLineMobile {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+  }
+  .futureTwoText {
+   margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+  .futureTitleDark {
+    text-align: center;
+  }
+  .futureThree{
+    display:none;
+  }
+  .futureThreeText {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .futureThreeMobile {
+    position: absolute;
+    bottom: -6px;
+    right: 0;
+  }
+  .futuresCards {
+    gap:16px;
+  }
+  .stages {
+    gap:16px;
+  }
+  .containerSteps {
+    gap: 34px;
+  }
+}
+@media (max-width: 320px) {
+  .teamStructure {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .rightSideBlock {
+    align-self: auto;
+  }
+  .containerTitle {
+
   }
 }
