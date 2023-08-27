@@ -86,7 +86,7 @@ const ServicesPage = () => {
                 <div className={styles.cardListTitle}>Strong Expertise in</div>
                 <ul className={styles.list}>
                   {StrongExpertise.map(({ name }) => {
-                    return <li className={styles.li}> {name} </li>;
+                    return <li className={styles.li} key={name}> {name} </li>;
                   })}
                 </ul>
               </div>
@@ -96,7 +96,7 @@ const ServicesPage = () => {
               <div className={styles.cardListTitle}>Saas Solutions</div>
                 <ul className={styles.list}>
                   {SaasSolutions.map(({ name, width }) => {
-                    return <li className={classNames(styles.li, {[styles.smallLi]: width}) }> {name} </li>;
+                    return <li className={classNames(styles.li, {[styles.smallLi]: width}) } key={name}> {name} </li>;
                   })}
                 </ul>
               </div>
