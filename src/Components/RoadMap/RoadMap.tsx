@@ -12,7 +12,7 @@ const RoadMap = () => {
   return (
     <div className={styles.container}>
       <div className={styles.containerTitle}>Roadmap</div>
-      <VerticalTimeline lineColor={"#5B7CFE"} className={styles.verticalTimeline}>
+      <VerticalTimeline lineColor={"#5B7CFE"} className={styles.verticalTimeline} >
 
         <VerticalTimelineElement
           className={styles.verticalTimelineElementWork}
@@ -21,6 +21,7 @@ const RoadMap = () => {
           contentStyle={{boxShadow:"none",padding:0}}
           contentArrowStyle={{position:'static'}}
           onTimelineElementClick={()=>{}}
+          intersectionObserverProps={{rootMargin:'0px 0px -50% 0px', threshold: 0.5}}
         >
           <div className={styles.point}>
           <div className={styles.title}>Q3 2023</div>
@@ -37,6 +38,7 @@ const RoadMap = () => {
           icon={<Eclipse/>}
           contentStyle={{boxShadow:"none",padding:0}}
           contentArrowStyle={{position:'static'}}
+          intersectionObserverProps={{rootMargin:'0px 0px -50% 0px', threshold: 0.5}}
         >
           <div className={styles.point}>
           <div className={styles.title}>Q4 2023</div>
@@ -53,6 +55,7 @@ const RoadMap = () => {
           icon={<Eclipse/>}
           contentStyle={{boxShadow:"none",padding:0}}
           contentArrowStyle={{position:'static'}}
+          intersectionObserverProps={{rootMargin:'0px 0px -50% 0px', threshold: 0.5}}
         >
           <div className={styles.point}>
           <div className={styles.title}>Q1 2024</div>
@@ -68,6 +71,7 @@ const RoadMap = () => {
           icon={<Eclipse/>}
           contentStyle={{boxShadow:"none",padding:0}}
           contentArrowStyle={{position:'static'}}
+          intersectionObserverProps={{rootMargin:'0px 0px -50% 0px', threshold: 0.5}}
         >
           <div className={styles.point}>
           <div className={styles.title}>November 2024</div>
@@ -83,6 +87,7 @@ const RoadMap = () => {
           icon={<Eclipse/>}
           contentStyle={{boxShadow:"none",padding:0}}
           contentArrowStyle={{position:'static'}}
+          intersectionObserverProps={{rootMargin:'0px 0px -50% 0px', threshold: 0.5}}
         >
           <div className={styles.point}>
           <div className={styles.title}>June 2024</div>

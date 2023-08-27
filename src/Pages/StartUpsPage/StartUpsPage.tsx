@@ -66,9 +66,9 @@ const StartUpsPage = () => {
                   Full team adopted to the existing needs may consist from
                 </div>
                 <div className={styles.teamStructure}>
-                  {Team.map(({ name, size }) => {
+                  {Team.map(({ name, size },index) => {
                     return (
-                      <span
+                      <span key={index}
                         className={classNames(styles.area, {
                           [styles.bigSize]: size,
                         })}
@@ -97,9 +97,9 @@ const StartUpsPage = () => {
                 Full team adopted to the existing needs may consist from
               </div>
               <div className={styles.teamStructure}>
-                {Team.map(({ name, size }) => {
+                {Team.map(({ name, size },index) => {
                   return (
-                      <span
+                      <span key={index}
                           className={classNames(styles.area, {
                             [styles.bigSize]: size,
                           })}
