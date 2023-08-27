@@ -4,21 +4,24 @@ import classNames from "classnames";
 import Button, {ButtonTypes} from "../../Button";
 import React, {FC} from "react";
 import {CATEGORIES} from "../Header";
+import {useDispatch} from "react-redux";
+import {isMobileVisible} from "../../../Redux/Reducers/authReducer";
 
 
 type MenuMobileProps={
-    isOpened:boolean
+    onClose:()=>void
     pathname:string
 }
 
 
-const MenuMobile:FC<MenuMobileProps>=({isOpened,pathname})=> {
+const MenuMobile:FC<MenuMobileProps>=({onClose,pathname})=> {
     return (<>
-        {isOpened && <div className={styles.menu}>
+         <div className={styles.menu}>
             <div>
                 {CATEGORIES.map(({link, name}) => {
                     return (
                         <NavLink
+                            onClick={onClose}
                             key={link}
                             to={link}
                             className={classNames(styles.categoriesMobile, {
@@ -48,7 +51,7 @@ const MenuMobile:FC<MenuMobileProps>=({isOpened,pathname})=> {
                     mobileDarkColor={true}
                 />
             </div>
-        </div>}
+        </div>
     </>)
 }
 
