@@ -8,6 +8,7 @@ import RoadMap from "../../Components/RoadMap";
 
 import styles from "./AboutUsPage.module.css";
 import ButtonContainer from "../../Components/ButtonContainer";
+import classNames from "classnames";
 
 const AboutUsPage = () => {
   return (
@@ -33,8 +34,10 @@ const AboutUsPage = () => {
                 developers for service providers and product companies.
               </div>
             </div>
-            <ButtonContainer/>
-            <div className={styles.logo}><AboutUsLogo /></div>
+            <ButtonContainer />
+            <div className={classNames(styles.logo, styles.hideImage)}>
+              <AboutUsLogo />
+            </div>
           </div>
         </div>
       </div>

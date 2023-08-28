@@ -31,18 +31,17 @@
   font-style: normal;
   font-weight: 600;
   line-height: 40px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.78px;
 }
 
 .data {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 592px;
-  padding-left:0;
-  margin:0;
+  max-width: 592px;
+  padding-left: 0;
+  margin: 0;
   list-style: initial;
-
 }
 
 .description {
@@ -56,7 +55,7 @@
 }
 
 .description::before {
-  content: '';
+  content: "";
   margin-left: 0;
 }
 
@@ -65,18 +64,17 @@
 }
 
 .containerTitle {
-  color: #1D1E2C;
-font-family: Kanit;
-font-size: 39px;
-font-style: normal;
-font-weight: 600;
-line-height: 40px;
-letter-spacing: 0.78px;
-padding-bottom: 8px;
-border-bottom: 4px solid #5B7CFE;
-width: max-content;
+  color: #1d1e2c;
+  font-family: Kanit;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.78px;
+  padding-bottom: 8px;
+  border-bottom: 4px solid #5b7cfe;
+  width: max-content;
 }
-
 
 .eclipse {
   -webkit-box-shadow: none;
@@ -84,9 +82,72 @@ width: max-content;
   box-shadow: none;
 }
 .eclipse svg {
-  width:56px;
+  width: 56px;
   height: 56px;
   margin-left: -26px;
 }
 
+@media (max-width: 1330px) {
+  .container {
+    max-width: 90vw;
+  }
 
+  .verticalTimeline {
+    width: 100% !important;
+    padding-top: 4em;
+    padding-bottom: 8em;
+    max-width: 1216px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 32px;
+  }
+  .data {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    gap: 24px;
+  }
+
+  .verticalTimeline::before {
+    width: 4px;
+  }
+
+  .point {
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+  }
+
+  .data {
+    gap: 8px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+  }
+
+  .containerTitle {
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .eclipse svg {
+    width: 48px;
+    height: 48px;
+    margin-left: -23px;
+  }
+}
