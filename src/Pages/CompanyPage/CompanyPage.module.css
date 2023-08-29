@@ -40,6 +40,10 @@
   display: flex;
   gap: 16px;
 }
+
+.containerTopMobile {
+  display: none;
+}
 .avatar {
   width: 88px;
   height: 88px;
@@ -149,15 +153,206 @@
 .area {
   padding: 8px 40px;
   border-radius: 100px;
-  border: 1px solid #5B7CFE;
+  border: 1px solid #5b7cfe;
   display: flex;
   justify-content: center;
   align-items: center;
-  color:  #1D1E2C;
+  color: #1d1e2c;
   text-align: center;
   font-family: Karla;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
+}
+
+.personalInfoTablet,
+.containerAreasTablet {
+  display: none;
+}
+
+@media (max-width: 1330px) {
+  .container {
+    max-width: 90vw;
+  }
+
+  .containerInfo {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .personalInfo,
+  .containerAreas {
+    display: none;
+  }
+  .containerAreasTablet {
+    display: block;
+    padding: 40px 0;
+    text-align: start;
+    border-bottom: 1px solid #d7d5d4;
+    border-top: 1px solid #d7d5d4;
+  }
+
+  .subtitleTablet {
+    color: #1d1e2c;
+    font-family: Kanit;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .areasTablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .areaTablet {
+    padding: 8px 40px;
+    border-radius: 100px;
+    border: 1px solid #5b7cfe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1d1e2c;
+    text-align: center;
+    font-family: Karla;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  .personalInfoTablet {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    text-align: start;
+  }
+
+  .personalJobTablet {
+    color: #828282;
+    font-family: Karla;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.06px;
+  }
+
+  .subtitleTabletName {
+    margin-bottom: 40px;
+  }
+  .personalAvatarTablet {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-color: #c1bebe;
+  }
+
+  .containerInfo {
+    padding-top: 40px;
+  }
+
+  .containerTop {
+    padding-bottom: 40px;
+  }
+
+  .desc {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    margin-top: 32px;
+  }
+
+  .containerButton {
+    width: 100%;
+  }
+
+  .containerInfo {
+    padding-top: 32px;
+  }
+
+  .containerTop {
+    display: none;
+  }
+  .containerTopMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 32px;
+    margin-top: 32px;
+    border-bottom: 1px solid #d7d5d4;
+  }
+
+  .title {
+    color: #5b7cfe;
+    font-family: Kanit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+  }
+
+  .cardAnswersMobile {
+    display: flex;
+    gap: 16px;
+    justify-content: start;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .data {
+    color: #9c9c9c;
+    font-family: Karla;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.06px;
+    display: flex;
+    gap: 8px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+  }
+
+  .containerAreasTablet {
+    padding: 32px 0;
+  }
+
+  .areasTablet {
+    gap: 4px;
+  }
+
+  .personalInfoTablet {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 32px;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .subtitleTabletName {
+    margin-bottom: 16px;
+  }
+
+  .buttonMobile {
+    display: flex;
+    justify-content: center;
+  }
 }

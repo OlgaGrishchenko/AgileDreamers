@@ -43,6 +43,7 @@
   font-weight: 500;
   line-height: 16px;
   border: 1px solid #5b7cfe;
+  width: max-content;
 }
 
 .smallSecondary {

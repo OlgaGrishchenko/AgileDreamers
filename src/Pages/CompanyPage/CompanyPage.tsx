@@ -111,12 +111,45 @@ const CompanyPage = () => {
           </div>
           <div>
             <Button
-              title={<div className={styles.buttonName}>Open chat</div>}
+              title={"Open chat"}
               type={ButtonTypes.SmallPrimary}
               onClick={() => {}}
             />
           </div>
         </div>
+      </div>
+
+      <div className={styles.containerTopMobile}>
+        <div className={styles.title}>{MOCK_CARD.companyName}</div>
+        <div className={styles.cardAnswersMobile}>
+          <div>
+            <img
+              src={MOCK_CARD.avatar}
+              className={styles.avatar}
+              alt="avatar"
+            />
+          </div>
+
+          <div>
+            <div className={classNames(styles.data, styles.location)}>
+              <div>{MOCK_CARD.location},</div>
+              <div>{MOCK_CARD.foundationDate}</div>
+            </div>
+            <div className={styles.data}>
+              <div className={styles.answers}>
+                <PeoplesIcon /> <span>{MOCK_CARD.teamSize}</span>
+              </div>
+              <div className={styles.answers}>
+                <BudgetIcon /> <span>{MOCK_CARD.budget}</span>
+              </div>
+              <div className={styles.answers}>
+                <ClockIcon /> <span>{MOCK_CARD.averageHourlyRate} per/h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.description}>{MOCK_CARD.companyDescription}</div>
       </div>
 
       <div className={styles.containerInfo}>
@@ -135,6 +168,37 @@ const CompanyPage = () => {
             })}
           </div>
         </div>
+      </div>
+
+      <div className={styles.containerAreasTablet}>
+        <div className={styles.subtitleTablet}>Company specializes in</div>
+        <div className={styles.areasTablet}>
+          {MOCK_CARD.softwareStack.map(({ name }) => {
+            return <span className={styles.areaTablet}> {name} </span>;
+          })}
+        </div>
+      </div>
+
+      <div className={styles.personalInfoTablet}>
+        <div>
+          <div className={styles.personalJobTablet}>Program Manager</div>
+          <div
+            className={classNames(
+              styles.subtitleTablet,
+              styles.subtitleTabletName
+            )}
+          >
+            Patrick Renteria
+          </div>
+          <div className={styles.buttonMobile}>
+            <Button
+              title={"Open chat"}
+              type={ButtonTypes.SmallPrimary}
+              onClick={() => {}}
+            />
+          </div>
+        </div>
+        <div className={styles.personalAvatarTablet}></div>
       </div>
     </div>
   );

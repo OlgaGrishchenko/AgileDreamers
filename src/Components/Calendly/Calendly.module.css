@@ -29,14 +29,22 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  .wrap {
+    margin-top: 96px;
+  }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
   .container {
     padding-bottom: 56px;
   }
 
   .vidget {
     width: 280px;
+  }
+
+  .wrap {
+    margin-top: 64px;
   }
 }
