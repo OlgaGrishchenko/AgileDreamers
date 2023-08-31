@@ -49,7 +49,7 @@ const MOCK_CARD = {
 const CompanyPage = () => {
   const navigate = useNavigate();
   const onProvidersClick = () => {
-    navigate(PathNames.Providers);
+    navigate("/providers");
   };
 
   return (
