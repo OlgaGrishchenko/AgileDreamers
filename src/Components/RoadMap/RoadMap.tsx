@@ -36,7 +36,7 @@ const RoadMap = () => {
           className={styles.verticalTimelineElementWork}
           iconClassName={styles.eclipse}
           icon={<Eclipse/>}
-          contentStyle={{boxShadow:"none",padding:0}}
+          contentStyle={{boxShadow:"none",padding:0,float:'right'}}
           contentArrowStyle={{position:'static'}}
           intersectionObserverProps={{rootMargin:'0px 0px -50% 0px', threshold: 0.5}}
         >
@@ -69,7 +69,7 @@ const RoadMap = () => {
           className={styles.verticalTimelineElementWork}
           iconClassName={styles.eclipse}
           icon={<Eclipse/>}
-          contentStyle={{boxShadow:"none",padding:0}}
+          contentStyle={{boxShadow:"none",padding:0,float:'right'}}
           contentArrowStyle={{position:'static'}}
           intersectionObserverProps={{rootMargin:'0px 0px -50% 0px', threshold: 0.5}}
         >
