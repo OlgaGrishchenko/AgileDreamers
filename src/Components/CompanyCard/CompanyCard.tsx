@@ -86,15 +86,14 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
           onClick={() => {}}
         />
 
-        <Button
-          className={classNames(styles.button, styles.blackColor)}
-          title={"More info"}
-          type={ButtonTypes.SmallSecondary}
-          onClick={onMoreClick} 
-        />
+        <Link  to={'/company_page'}
+               reloadDocument
+               className={classNames(styles.link, styles.blackColor)}
+               type={ButtonTypes.SmallSecondary}>{"More info"}
+        </Link>
       </div>
     </div>
   );
 };
 
-export default CompanyCard;
+export default CompanyCard
