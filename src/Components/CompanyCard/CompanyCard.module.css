@@ -1,7 +1,7 @@
 .card {
   width: 392px;
   height: 300px;
-  box-shadow: 0px 4px 6px 0px rgba(176, 176, 176, 0.25);
+  box-shadow: 0 4px 6px 0 rgba(176, 176, 176, 0.25);
   border: 1px solid #eee;
   border-radius: 20px;
   padding: 24px;
@@ -161,7 +161,7 @@
     gap: 8px;
     width: 100%;
   }
-  .button {
+  .button,.link {
     box-sizing: border-box;
     width: 272px;
     height: 32px;
@@ -199,7 +199,7 @@
     width: 48px;
     height: 48px;
   }
-  .button {
+  .button,.link {
     width: 240px;
   }
   .timeBlock {

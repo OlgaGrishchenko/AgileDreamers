@@ -8,9 +8,8 @@ import { PeoplesIcon } from "../../Assets/CompanyCard/PeoplesIcon";
 import { ClockIcon } from "../../Assets/CompanyCard/ClockIcon";
 
 import Button, { ButtonTypes } from "../Button";
-import { PathNames } from "../../Pages/Router/Router";
 import classNames from "classnames";
-import ProvidersPage from "../../Pages/ProvidersPage";
+
 
 type CompanyCardProps = {
   card: CompanyCardType;
@@ -30,11 +29,6 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
     avatar,
   } = card;
 
-  const navigate = useNavigate();
-  const onMoreClick = () => {
-    navigate(`/company-page`);
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  };
 
   return (
     <div className={styles.card}>
@@ -44,7 +38,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
         </div>
         <div className={styles.first}>
           <div className={styles.avatar}>
-            <img src={avatar} className={styles.avatar} />
+            <img src={avatar} className={styles.avatar} alt={''}/>
           </div>
           <div className={styles.info}>
             <div>
@@ -86,7 +80,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
           onClick={() => {}}
         />
 
-        <Link  to={'/company_page'}
+        <Link  to={'/company-page'}
                reloadDocument
                className={classNames(styles.link, styles.blackColor)}
                type={ButtonTypes.SmallSecondary}>{"More info"}
