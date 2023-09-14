@@ -2,7 +2,6 @@ import React from "react";
 
 import { Line } from "../../Assets/Headline/Line";
 import { Puzzle } from "../../Assets/Headline/PuzzlePicture";
-import Button, { ButtonTypes } from "../Button";
 
 import Ukraine from "../Ukraine";
 

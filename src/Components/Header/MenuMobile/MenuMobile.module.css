@@ -65,7 +65,7 @@
         align-items: center;
     }
     .containerButtonsBurger {
-        max-width: 288px;
+        /*max-width: 288px;*/
         display:flex;
         flex-direction: column;
         gap:16px;

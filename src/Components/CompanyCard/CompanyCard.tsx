@@ -9,6 +9,7 @@ import { ClockIcon } from "../../Assets/CompanyCard/ClockIcon";
 
 import Button, { ButtonTypes } from "../Button";
 import classNames from "classnames";
+import {PathNames} from "../../Pages/Router/Router";
 
 
 type CompanyCardProps = {
@@ -80,7 +81,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
           onClick={() => {}}
         />
 
-        <Link  to={'/company-page'}
+        <Link  to={PathNames.CompanyPage}
                reloadDocument
                className={classNames(styles.link, styles.blackColor)}
                type={ButtonTypes.SmallSecondary}>{"More info"}

@@ -119,6 +119,6 @@
     background: #5b7cfe;
   }
   .searchContainer {
-    width: 100%;
+    flex:1
   }
 }
