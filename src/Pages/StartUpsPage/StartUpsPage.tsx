@@ -25,7 +25,8 @@ const StartUpsPage = () => {
     { name: "AI developers" },
     { name: "Mobile developers" },
     { name: "QA" },
-    { name: "Product Owners/Business Analysts", size: true },
+    { name: "Product Owners"},
+    { name: "Business Analysts" },
   ];
 
   return (
@@ -66,12 +67,10 @@ const StartUpsPage = () => {
                   Full team adopted to the existing needs may consist from
                 </div>
                 <div className={styles.teamStructure}>
-                  {Team.map(({ name, size },index) => {
+                  {Team.map(({ name },index) => {
                     return (
                       <span key={index}
-                        className={classNames(styles.area, {
-                          [styles.bigSize]: size,
-                        })}
+                        className={styles.area}
                       >
                         {name}
                       </span>
@@ -97,12 +96,10 @@ const StartUpsPage = () => {
                 Full team adopted to the existing needs may consist from
               </div>
               <div className={styles.teamStructure}>
-                {Team.map(({ name, size },index) => {
+                {Team.map(({ name },index) => {
                   return (
                       <span key={index}
-                          className={classNames(styles.area, {
-                            [styles.bigSize]: size,
-                          })}
+                          className={styles.area}
                       >
                         {name}
                       </span>

@@ -179,4 +179,7 @@
   .logoMobile g {
     mix-blend-mode: overlay;
   }
+  .icons {
+    margin-top:24px;
+  }
 }

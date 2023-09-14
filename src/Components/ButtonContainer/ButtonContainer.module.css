@@ -20,7 +20,7 @@
 @media (max-width: 600px) {
   .buttons {
     gap: 12px;
-    max-width: fit-content;
+    width: 100%;
     margin: auto;
   }
   .topButtonContainer {

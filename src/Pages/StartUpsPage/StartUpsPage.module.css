@@ -445,6 +445,7 @@
     display:flex;
     text-align: center;
     margin-bottom: 48px;
+    border-bottom:none;
   }
   .containerFutures {
     gap: 32px;
@@ -486,7 +487,7 @@
   .stage {
     border-radius: 20px;
     box-shadow: 0 4px 10px 0 rgba(175, 175, 175, 0.25);
-    width: 288px;
+    width: auto;
     height: auto;
     padding: 24px 16px;
     display: flex;
@@ -524,6 +525,7 @@
     text-align: center;
     padding:0;
     margin-bottom: 0;
+    border-bottom: none;
   }
   .stepsGroup {
     gap: 24px;
@@ -595,8 +597,11 @@
   .containerSteps {
     gap: 34px;
   }
+  .button {
+    width:auto;
+  }
 }
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .teamStructure {
     flex-wrap: nowrap;
     flex-direction: column;
@@ -604,7 +609,11 @@
   .rightSideBlock {
     align-self: auto;
   }
-  .containerTitle {
-
+  .area {
+    justify-content: center;
+  }
+  .stages {
+    gap:16px;
+    align-items: center;
   }
 }

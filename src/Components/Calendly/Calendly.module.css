@@ -25,16 +25,21 @@
 
 @media (max-width: 768px) {
   .container {
-    padding-bottom: 64px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding:40px 16px 64px 16px;
   }
 
   .wrap {
     margin-top: 96px;
   }
 }
-
+@media (max-width: 500px) {
+  .wrap {
+    margin-top: 64px;
+  }
+  .container {
+    padding:56px 16px;
+  }
+}
 @media (max-width: 321px) {
   .container {
     padding-bottom: 56px;
@@ -42,9 +47,5 @@
 
   .vidget {
     width: 280px;
-  }
-
-  .wrap {
-    margin-top: 64px;
   }
 }

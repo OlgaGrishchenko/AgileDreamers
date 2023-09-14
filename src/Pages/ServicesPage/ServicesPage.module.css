@@ -25,6 +25,22 @@
 
 .headline {
   width: 1216px;
+  transform: translateY(22%);
+  animation: ani 1.5s forwards;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(22%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .headlineDesc {
@@ -205,7 +221,12 @@
     width: 220px;
   }
 }
-
+@media (max-width: 500px) {
+  .headlineTitle {
+    font-size: 39px;
+    line-height: 40px;
+  }
+}
 @media (max-width: 400px) {
   .bottomContainerList,
   .topContainerList {

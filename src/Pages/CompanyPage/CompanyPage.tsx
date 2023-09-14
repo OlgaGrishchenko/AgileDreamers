@@ -49,7 +49,7 @@ const MOCK_CARD = {
 const CompanyPage = () => {
   const navigate = useNavigate();
   const onProvidersClick = () => {
-    navigate("/providers");
+    navigate(PathNames.Home);
   };
 
   return (
@@ -59,7 +59,7 @@ const CompanyPage = () => {
           className={styles.button}
           title={
             <div className={styles.buttonName}>
-              <ArrowReturn /> Back to providers
+              <ArrowReturn />{"Back"}
             </div>
           }
           type={ButtonTypes.SmallSecondary}
@@ -78,7 +78,7 @@ const CompanyPage = () => {
               />
             </div>
 
-            <div>
+            <div >
               <div className={classNames(styles.data, styles.location)}>
                 <div>{MOCK_CARD.location},</div>
                 <div>{MOCK_CARD.foundationDate}</div>
@@ -130,7 +130,7 @@ const CompanyPage = () => {
             />
           </div>
 
-          <div>
+          <div className={styles.mobileFlex}>
             <div className={classNames(styles.data, styles.location)}>
               <div>{MOCK_CARD.location},</div>
               <div>{MOCK_CARD.foundationDate}</div>

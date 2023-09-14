@@ -22,7 +22,7 @@ const Calendly = () => {
     
     <div className={styles.wrap}>
       <div className={styles.container}> 
-      <InlineWidget url="https://calendly.com/agiledreamers-com/30min" styles={{height: '700px', }}/>
+      <InlineWidget url="https://calendly.com/agiledreamers-com/30min" styles={{height: '700px' }}/>
       </div>
     </div>
   );
