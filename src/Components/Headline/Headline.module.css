@@ -102,7 +102,7 @@
 
 .line {
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: 100px;
 }
 
@@ -144,14 +144,19 @@
 }
 
 @media (max-width: 700px) {
+  .wrap {
+    padding: 80px 0 40px 0;
+  }
   .hideUkraine {
     display: none;
   }
 }
 
 @media (max-width: 600px) {
-  .wrap {
-    padding: 40px 0;
+  .container {
+    transform: none;
+    opacity: 1;
+    animation: none;
   }
   .title {
     font-size: 39px;

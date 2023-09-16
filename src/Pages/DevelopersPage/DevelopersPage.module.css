@@ -167,7 +167,7 @@
 
 @media (max-width: 860px) {
   .darkBlock {
-    padding: 56px 0px;
+    padding: 56px 0;
   }
   .platformsSubtitle {
     max-width: 584px;
@@ -188,7 +188,7 @@
 
 @media (max-width: 700px) {
   .darkBlock {
-    padding: 40px 16px;
+    padding:88px 16px 40px 16px;
   }
 
   .headlineTitle {
@@ -233,6 +233,10 @@
 }
 
 @media (max-width: 500px) {
+  .headline {
+    transform: none;
+    animation: none;
+  }
   .wrap {
     gap:40px;
   }
