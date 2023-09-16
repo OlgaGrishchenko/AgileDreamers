@@ -11,7 +11,7 @@
 
 .headlineImage {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 64px;
 }
 
@@ -103,8 +103,13 @@
 }
 
 @media (max-width: 500px) {
+  .headline {
+    text-align: start;
+    transform: none;
+    animation: none;
+  }
   .darkBlock {
-    padding: 16px 0;
+    padding: 88px 0 16px 0;
   }
 
   .headlineTitle {

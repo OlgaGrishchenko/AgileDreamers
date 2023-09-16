@@ -103,6 +103,11 @@
 @media (max-width: 700px) {
   .wrap {
     display:flex;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 9999;
   }
   .container {
     flex:1;
