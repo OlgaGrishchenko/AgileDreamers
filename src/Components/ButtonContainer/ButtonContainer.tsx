@@ -25,7 +25,7 @@ const ButtonContainer = () => {
           title={"Become a Provider"}
           type={ButtonTypes.BigSecondary}
           onClick={() => {
-            navigate("//dashboard.agiledreamers.com/sign-in");
+            navigate("//dashboard.agiledreamers.com/sign-up");
           }}
         />
       </div>
@@ -34,7 +34,7 @@ const ButtonContainer = () => {
         title={"Become a Freelance Developer"}
         type={ButtonTypes.BigSecondary}
         onClick={() => {
-          navigate("//dashboard.agiledreamers.com/sign-in");
+          navigate("//dashboard.agiledreamers.com/sign-up");
         }}
       />
     </div>
