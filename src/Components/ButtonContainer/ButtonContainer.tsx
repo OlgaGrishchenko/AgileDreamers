@@ -1,38 +1,44 @@
 import styles from "../ButtonContainer/ButtonContainer.module.css";
-import Button, {ButtonTypes} from "../Button";
+import Button, { ButtonTypes } from "../Button";
 import React from "react";
-import {useNavigate} from "react-router-dom";
-import {PathNames} from "../../Pages/Router/Router";
+import { useNavigate } from "react-router-dom";
+import { PathNames } from "../../Pages/Router/Router";
 
-const ButtonContainer=()=>{
-    const navigate=useNavigate()
+const ButtonContainer = () => {
+  const navigate = useNavigate();
 
-    const navigateToProvidersPage=()=>{
-        navigate(PathNames.Providers)
-    }
+  const navigateToProvidersPage = () => {
+    navigate(PathNames.Providers);
+  };
 
-    return <div className={styles.buttons}>
-        <div className={styles.topButtonContainer}>
-            <Button
-                className={styles.button}
-                title={"Service Providers"}
-                type={ButtonTypes.BigPrimary}
-                onClick={navigateToProvidersPage}
-            />
-            <Button
-                className={styles.button}
-                title={"Become a Provider"}
-                type={ButtonTypes.BigSecondary}
-                onClick={() => {}}
-            />
-        </div>
+  return (
+    <div className={styles.buttons}>
+      <div className={styles.topButtonContainer}>
         <Button
-            className={styles.buttonBig}
-            title={"Become a Freelance Developer"}
-            type={ButtonTypes.BigSecondary}
-            onClick={() => {}}
+          className={styles.button}
+          title={"Service Providers"}
+          type={ButtonTypes.BigPrimary}
+          onClick={navigateToProvidersPage}
         />
+        <Button
+          className={styles.button}
+          title={"Become a Provider"}
+          type={ButtonTypes.BigSecondary}
+          onClick={() => {
+            navigate("//dashboard.agiledreamers.com/sign-in");
+          }}
+        />
+      </div>
+      <Button
+        className={styles.buttonBig}
+        title={"Become a Freelance Developer"}
+        type={ButtonTypes.BigSecondary}
+        onClick={() => {
+          navigate("//dashboard.agiledreamers.com/sign-in");
+        }}
+      />
     </div>
-}
+  );
+};
 
-export default ButtonContainer
+export default ButtonContainer;

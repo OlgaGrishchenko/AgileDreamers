@@ -1,5 +1,5 @@
 import styles from "../MenuMobile/MenuMobile.module.css";
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 import classNames from "classnames";
 import Button, {ButtonTypes} from "../../Button";
 import React, {FC} from "react";
@@ -15,6 +15,7 @@ type MenuMobileProps={
 
 
 const MenuMobile:FC<MenuMobileProps>=({onClose,pathname})=> {
+    const navigate = useNavigate();
     return (<>
          <div className={styles.menu}>
             <div>
@@ -39,7 +40,8 @@ const MenuMobile:FC<MenuMobileProps>=({onClose,pathname})=> {
                     title={"Sign In"}
                     type={ButtonTypes.BigPrimary}
                     onClick={() => {
-                    }}
+                        navigate("//dashboard.agiledreamers.com/sign-in");
+                      }}
                     mobileLightColor={true}
                 />
                 <Button
@@ -47,7 +49,8 @@ const MenuMobile:FC<MenuMobileProps>=({onClose,pathname})=> {
                     title={"Sign up"}
                     type={ButtonTypes.BigSecondary}
                     onClick={() => {
-                    }}
+                        navigate("//dashboard.agiledreamers.com/sign-up");
+                      }}
                     mobileDarkColor={true}
                 />
             </div>
