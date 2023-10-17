@@ -1,7 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-
-
 type authReducerState = {
 isModalVisible:boolean
 };

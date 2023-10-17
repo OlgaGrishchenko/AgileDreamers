@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 import { Outlet, useParams } from "react-router-dom";
 import Benefits from "../../Components/Benefits";
@@ -6,6 +7,8 @@ import CompanyCardList from "../../Components/CompanyCardList";
 import Headline from "../../Components/Headline";
 import SearchLine from "../../Components/SearchLine";
 import ToolsWeUse from "../../Components/ToolsWeUse";
+import { getCompanies } from "../../Redux/Reducers/companiesReducer";
+import companiesSelector from "../../Redux/Selectors/companiesSelector";
 
 import styles from "./Home.module.css";
 
@@ -35,13 +38,20 @@ const MOCK_CARD_LIST = [
 ];
 
 const Home = () => {
+  const dispatch = useDispatch();
+  const allCompanies = useSelector(companiesSelector.getAllCompanies);
+
+      useEffect(() => {
+         dispatch(getCompanies());
+      }, []);
+
   return (
     <>
       <div className={styles.container}>
         <div>
           <Headline />
           <SearchLine />
-          <CompanyCardList cardsList={MOCK_CARD_LIST} />
+          <CompanyCardList cardsList={allCompanies} />
         </div>
         <Benefits />
         <ToolsWeUse />
