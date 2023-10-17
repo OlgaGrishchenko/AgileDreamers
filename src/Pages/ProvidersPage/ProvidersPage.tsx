@@ -1,8 +1,11 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { ProvidersImgHeadline } from "../../Assets/ProvidersPage/ProvidersImgHeadline";
 import CompanyCardList from "../../Components/CompanyCardList";
 import SearchLine from "../../Components/SearchLine";
+import { getCompanies } from "../../Redux/Reducers/companiesReducer";
+import companiesSelector from "../../Redux/Selectors/companiesSelector";
 
 import styles from "./ProvidersPage.module.css";
 
@@ -26,6 +29,14 @@ const MOCK_CARD = {
 const MOCK_CARD_LIST = [MOCK_CARD, MOCK_CARD, MOCK_CARD, MOCK_CARD];
 
 const ProvidersPage = () => {
+
+  const dispatch = useDispatch();
+  const allCompanies = useSelector(companiesSelector.getAllCompanies);
+
+      useEffect(() => {
+         dispatch(getCompanies());
+      }, []);
+      
   return (
     <div className={styles.wrap}>
       <div className={styles.darkBlock}>
@@ -53,7 +64,7 @@ const ProvidersPage = () => {
       </div>
       <div className={styles.container}>
         <SearchLine />
-        <CompanyCardList cardsList={MOCK_CARD_LIST} />
+        <CompanyCardList cardsList={allCompanies} />
       </div>
     </div>
   );

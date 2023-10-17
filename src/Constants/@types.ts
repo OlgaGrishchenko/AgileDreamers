@@ -1,15 +1,15 @@
 export type CompanyCardType = {
   id: number;
-  companyName: string;
-  companyDescription: string;
-  fullCompanyDescription: string;
-  budget: number;
-  teamSize: number;
-  foundationDate: number;
-  averageHourlyRate: string;
+  company_name: string;
+  short_description: string;
+  full_description: string;
+  minimum_project_budget: number;
+  team_size: number;
+  foundation_date: string;
+  average_hourly_rate: string;
   location: string;
-  softwareStack: Array<string>;
-  avatar: string;
+  software_stack: Array<string>;
+  logo: string;
 };
 
 export type CompanyCardListType = Array<CompanyCardType>;

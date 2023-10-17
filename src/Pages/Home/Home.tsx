@@ -28,15 +28,6 @@ const MOCK_CARD = {
     "https://media.licdn.com/dms/image/D4D0BAQEG_ww51jlBbw/company-logo_200_200/0/1685353409956?e=1699488000&v=beta&t=65JSbtc4ITWf1yQtdYWDf6XFN1lFU3OYMy9DhsytI30",
 };
 
-const MOCK_CARD_LIST = [
-  MOCK_CARD,
-  MOCK_CARD,
-  MOCK_CARD,
-  MOCK_CARD,
-  MOCK_CARD,
-  MOCK_CARD,
-];
-
 const Home = () => {
   const dispatch = useDispatch();
   const allCompanies = useSelector(companiesSelector.getAllCompanies);

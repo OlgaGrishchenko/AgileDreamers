@@ -19,15 +19,15 @@ type CompanyCardProps = {
 const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
   const {
     id,
-    companyName,
-    companyDescription,
-    fullCompanyDescription,
-    budget,
-    teamSize,
-    foundationDate,
-    averageHourlyRate,
+    company_name,
+    short_description,
+    full_description,
+    minimum_project_budget,
+    team_size,
+    foundation_date,
+    average_hourly_rate,
     location,
-    avatar,
+    logo,
   } = card;
 
 
@@ -35,34 +35,34 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
     <div className={styles.card}>
       <div className={styles.cardInfo}>
         <div className={classNames(styles.title, styles.hideTitleTablet)}>
-          {companyName}
+          {company_name}
         </div>
         <div className={styles.first}>
           <div className={styles.avatar}>
-            <img src={avatar} className={styles.avatar} alt={''}/>
+            <img src={`https://api.agiledreamers.com${logo}`} className={styles.avatar} alt={''}/>
           </div>
           <div className={styles.info}>
             <div>
               <div className={classNames(styles.data, styles.firstInfo)}>
                 <div className={styles.data}>{location},</div>
-                <div className={styles.data}>{foundationDate}</div>
+                <div className={styles.data}>{foundation_date}</div>
               </div>
               <div className={classNames(styles.title, styles.hideTitle)}>
-                {companyName}
+                {company_name}
               </div>
             </div>
             <div className={classNames(styles.data, styles.secondInfo)}>
               <div className={styles.containerAnswers}>
                 <div className={styles.answers}>
-                  <PeoplesIcon /> <span>{teamSize}</span>
+                  <PeoplesIcon /> <span>{team_size}</span>
                 </div>
                 <div className={styles.answers}>
-                  <BudgetIcon /> <span>{budget}</span>
+                  <BudgetIcon /> <span>{minimum_project_budget}</span>
                 </div>
                 <div className={styles.answers}>
                   <ClockIcon />{" "}
                   <div className={styles.timeBlock}>
-                    {averageHourlyRate}
+                    {average_hourly_rate}
                     <div>per/h</div>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ card }) => {
             </div>
           </div>
         </div>
-        <div className={styles.text}>{companyDescription}</div>
+        <div className={styles.text}>{short_description}</div>
       </div>
 
       <div className={styles.third}>

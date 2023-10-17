@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
 import authReducer from "./Reducers/authReducer";
 import companiesReducer from "./Reducers/companiesReducer";
+import rootSaga from "./Sagas/rootSaga";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -15,6 +16,6 @@ export const store = configureStore({
   middleware: [sagaMiddleware],
 });
 
-/*sagaMiddleware.run(rootSaga);*/
+sagaMiddleware.run(rootSaga);
 
 export type RootState = ReturnType<typeof store.getState>;

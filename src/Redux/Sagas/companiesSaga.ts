@@ -12,10 +12,10 @@ import API from "../utils/api";
 
 function* getAllCompaniesWorker(action: PayloadAction<undefined>) {
    const { ok, data, problem } = yield call(API.getCompanies);
-
+   console.log("руддщ")
    if (ok && data) {
       yield put(setCompanies(data));
-      console.log(data)
+      
    } else {
       console.warn("Error fetching posts: ", problem);
    }
